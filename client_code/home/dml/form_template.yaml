@@ -1,0 +1,251 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html', role: selected}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}', spacing_above: small, spacing_below: small}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - name: xy_panel_1
+    properties: {height: 139}
+    type: XYPanel
+    layout_properties: {grid_position: 'LWXFFV,MHELXW'}
+    components:
+    - name: image_itkmitl_copy_1
+      properties: {source: _/theme/TI-KMITL.jpg, height: 142}
+      type: Image
+      layout_properties: {x: 671.046875, y: 0, width: 200}
+    - name: image_MEDKMITL_copy_1
+      properties: {source: _/theme/MDKMITL.png, height: 146}
+      type: Image
+      layout_properties: {x: 837, y: 0, width: 133}
+    - name: image_cira_copy_1
+      properties: {source: _/theme/cirarobotics.png, height: 139}
+      type: Image
+      layout_properties: {x: 522.140625, y: 0, width: 200}
+    - name: image_KMITL_copy_1
+      properties: {source: _/theme/KMITL.jpg, height: 139}
+      type: Image
+      layout_properties: {x: 331.234375, y: 0, width: 200}
+    - name: image_TSRI_copy_1
+      properties: {source: _/theme/TSRI.png, height: 141}
+      type: Image
+      layout_properties: {x: 248.140625, y: 0, width: 100}
+    - name: image_NRCT_copy_1
+      properties: {source: _/theme/NCRT.jpeg, height: 145}
+      type: Image
+      layout_properties: {x: 139.140625, y: 0, width: 97}
+    - name: image_MHESRI_copy_1
+      properties: {source: _/theme/MHESRI.png, height: 143}
+      type: Image
+      layout_properties: {x: 9.046875, y: 0, width: 125}
+  - name: grid_panel_3
+    properties: {background: 'theme:On Primary'}
+    type: GridPanel
+    layout_properties: {grid_position: 'LBNEGN,EYSIJB'}
+    components: []
+  - name: grid_panel_1
+    properties: {background: 'theme:On Secondary'}
+    type: GridPanel
+    layout_properties: {grid_position: 'UKYVTG,TJXFDE', full_width_row: true}
+    components:
+    - name: label_model
+      properties: {text: 'Model  : ', align: right}
+      type: Label
+      layout_properties: {row: GMLPUL, width_xs: 2, col_xs: 0}
+    - name: drop_down_models
+      properties:
+        include_placeholder: false
+        items: ['']
+      type: DropDown
+      layout_properties: {row: GMLPUL, width_xs: 3, col_xs: 1}
+      event_bindings: {change: drop_down_models_change}
+      data_bindings: []
+    # - name: label_upload
+    #   properties: {text: 'Process :  ', bold: true, align: right, font_size: 18}
+    #   type: Label
+    #   layout_properties: {row: GMLPUL, width_xs: 2, col_xs: 4}
+    # - name: label_show_upload
+    #   properties: {font_size: 18, border: '', role: null, text: '      Please upload
+    #       images for prediction', align: left}
+    #   type: Label
+    #   layout_properties: {row: GMLPUL, width_xs: 5, col_xs: 6}
+    #   data_bindings:
+    #   - {property: border, code: 'self.item['''']', writeback: false}
+    - name: label_backbone
+      properties: {text: 'Backbone  : ', align: right}
+      type: Label
+      layout_properties: {row: OMKEZD, width_xs: 2, col_xs: 0}
+    - name: drop_down_backbone
+      properties:
+        include_placeholder: false
+        items: ['Resnet34', 'Resnet50', 'Resnet101', 'Resnet152']
+      type: DropDown
+      layout_properties: {row: OMKEZD, width_xs: 3, col_xs: 2}
+      event_bindings: {change: drop_down_models_change}
+      data_bindings: []
+    # - name: label_k
+    #   properties: {text: 'number of similar images retrieved (K) :', align: right}
+    #   type: Label
+    #   layout_properties: {row: OMKEZD, width_xs: 3, col_xs: 5}
+    # - name: k_number
+    #   properties: {}
+    #   type: TextBox
+    #   layout_properties: {row: OMKEZD, width_xs: 1, col_xs: 8}
+    #   event_bindings: {pressed_enter: k_number_pressed_enter}
+    - name: label_k
+      properties: {text: 'number of similar images retrieved (K) :', align: right}
+      type: Label
+      layout_properties: {row: GMLPUL, width_xs: 3, col_xs: 4}
+    - name: k_number
+      properties: {}
+      type: TextBox
+      layout_properties: {row: GMLPUL, width_xs: 1, col_xs: 8}
+      event_bindings: {pressed_enter: k_number_pressed_enter}
+
+    - name: label_upload_trained_img
+      properties: {text: 'Upload images trained :', align: right}
+      type: Label
+      layout_properties: {row: YPLHMJ, width_xs: 2, col_xs: 0}
+    - name: file_loader_trained_img
+      properties: {font: '', font_size: 18}
+      type: FileLoader
+      layout_properties: {row: YPLHMJ, width_xs: 2, col_xs: 2}
+    - name: label_train_img
+      properties: {border: '', icon: '', icon_align: left, font_size: 18, text: '   ...'}
+      type: Label
+      layout_properties: {row: YPLHMJ, width_xs: 7, col_xs: 4}
+    - name: label_custom_model
+      properties: {text: 'Upload model :', align: right}
+      type: Label
+      layout_properties: {row: CHWQHC, width_xs: 2, col_xs: 0}
+    - name: file_loader_model
+      properties: {font: '', font_size: 18}
+      type: FileLoader
+      layout_properties: {row: CHWQHC, width_xs: 2, col_xs: 2}
+    - name: label_model_name
+      properties: {border: '', icon: '', icon_align: left, font_size: 18, text: '   ...'}
+      type: Label
+      layout_properties: {row: CHWQHC, width_xs: 7, col_xs: 4}
+    - name: label_embedder
+      properties: {text: 'Upload embedder :', align: right}
+      type: Label
+      layout_properties: {row: BZOAPQ, width_xs: 2, col_xs: 0}
+    - name: file_loader_embedder
+      properties: {font: '', font_size: 18}
+      type: FileLoader
+      layout_properties: {row: BZOAPQ, width_xs: 2, col_xs: 2}
+    - name: label_embedder_name
+      properties: {border: '', icon: '', icon_align: left, font_size: 18, text: '   ...'}
+      type: Label
+      layout_properties: {row: BZOAPQ, width_xs: 7, col_xs: 4}
+    - name: label_upload_img
+      properties: {text: 'Upload images  :', align: right}
+      type: Label
+      layout_properties: {row: GHJWOB, width_xs: 2, col_xs: 0}
+    - name: file_loader_img
+      properties: {multiple: true, font_size: 18}
+      type: FileLoader
+      layout_properties: {row: GHJWOB, width_xs: 2, col_xs: 0}
+      data_bindings: []
+      event_bindings: {change: file_loader_img_change}
+    - name: label_image_name
+      properties: {border: '', icon: 'fa:image', icon_align: left, font_size: 18,
+        text: '   ...'}
+      type: Label
+      layout_properties: {row: GHJWOB, width_xs: 7, col_xs: 2}
+    - name: bt_previous_img
+      properties: {text: '', background: 'theme:Primary Container', icon: 'fa:arrow-circle-left',
+        icon_align: left, align: right}
+      type: Button
+      layout_properties: {row: EXQZDO, width_xs: 1, col_xs: 0}
+      data_bindings: []
+      event_bindings: {click: bt_previous_img_click}
+    - name: img_now
+      properties: {font_size: 18}
+      type: Label
+      layout_properties: {row: EXQZDO, width_xs: 1, col_xs: 1}
+    - name: label_1
+      properties: {text: /, align: center, font_size: 18, bold: true, italic: false}
+      type: Label
+      layout_properties: {row: EXQZDO, width_xs: 1, col_xs: 2}
+    - name: img_all
+      properties: {font_size: 18}
+      type: Label
+      layout_properties: {row: EXQZDO, width_xs: 1, col_xs: 3}
+    - name: bt_next_img
+      properties: {text: '', background: 'theme:Primary Container', icon: 'fa:arrow-circle-right',
+        icon_align: right, align: left, bold: true, font_size: null}
+      type: Button
+      layout_properties: {row: EXQZDO, width_xs: 1, col_xs: 3}
+      event_bindings: {click: bt_next_img_click}
+    - name: label_result_
+      properties: {text: 'Reslut : ', align: right}
+      type: Label
+      layout_properties: {row: EXQZDO, width_xs: 1, col_xs: 5}
+    - name: label_result_write
+      properties: {border: '', icon: '', icon_align: left, font_size: 18, text: '   ...'}
+      type: Label
+      layout_properties: {row: EXQZDO, width_xs: 3, col_xs: 6}
+  - name: grid_panel_2
+    properties: {}
+    type: GridPanel
+    layout_properties: {grid_position: 'XFHXZI,RTPEDX', full_width_row: true}
+    components:
+    - name: image_query
+      properties: {background: 'theme:On Primary', border: '', height: 400}
+      type: Image
+      layout_properties: {row: TWDLGH, width_xs: 6, col_xs: 0}
+    - name: image_predict
+      properties: {background: 'theme:On Secondary', height: '400'}
+      type: Image
+      layout_properties: {row: TWDLGH, width_xs: 6, col_xs: 6}
+    - name: image_k
+      properties: {height: '400', background: 'theme:On Primary', border: ''}
+      type: Image
+      layout_properties: {row: AXVVII, width_xs: 12, col_xs: 0}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  event_bindings: {}
+  components: []
+- name: linear_panel_1
+  properties: {}
+  type: LinearPanel
+  layout_properties: {slot: left-nav}
+  components:
+  - name: bt_home
+    properties: {text: Home, font_size: 18, spacing_above: medium, spacing_below: medium,
+      italic: false, background: 'theme:Primary Container', bold: true, underline: false,
+      icon: 'fa:home'}
+    type: Button
+    layout_properties: {}
+    data_bindings: []
+    event_bindings: {click: bt_home_click}
+  - name: spacer_1
+    properties: {height: 16}
+    type: Spacer
+    layout_properties: {}
+  - name: dml
+    properties: {background: 'theme:On Primary', foreground: '', role: null}
+    type: Link
+    components:
+    - name: image_1
+      properties: {height: 34, source: _/theme/17647666094747.jpg}
+      type: Image
+      layout_properties: {grid_position: 'QOSOGE,MDORYA'}
+    event_bindings: {click: dml_click}
+    layout_properties: {}
+  - name: image_2
+    properties: {height: 75}
+    type: Image
+    layout_properties: {}
+  - name: button_2
+    properties: {text: Logout, background: ''}
+    type: Button
+    layout_properties: {}
+    event_bindings: {click: button_2_click}
+data_bindings: []

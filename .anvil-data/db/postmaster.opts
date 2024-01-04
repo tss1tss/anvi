@@ -1,0 +1,1 @@
+/media/tss2tss/7e5347d8-06dd-4a18-b4c6-a7309160969b/ai/DML/anvil/dml2/dml/.anvil-data/db-bin/PG-f2e3e42c260d3a84f6730bd8bccfb393/bin/postgres "-D" ".anvil-data/db" "-p" "46573" "-F" "-c" "synchronous_commit=off" "-c" "max_connections=300" "-c" "timezone=UTC"

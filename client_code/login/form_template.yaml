@@ -1,0 +1,36 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html', role: selected, visible: true}
+components:
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+- name: xy_panel_1
+  properties: {height: 431, width: 380}
+  type: XYPanel
+  layout_properties: {slot: default}
+  components:
+  - name: label_username
+    properties: {content: 'User name : ', align: left}
+    type: RichText
+    layout_properties: {x: 80, y: 200, width: 100}
+  - name: input_username
+    properties: {height: 42, text: ''}
+    type: TextArea
+    layout_properties: {x: 180, y: 200, width: 200}
+  - name: label_password
+    properties: {content: 'Password : ', align: left}
+    type: RichText
+    layout_properties: {x: 80, y: 280, width: 100}
+  - name: login
+    properties: {text: Login, background: 'theme:Primary Container'}
+    type: Button
+    layout_properties: {x: 120, y: 338, width: 200}
+    event_bindings: {click: login_click}
+  - name: input_password
+    properties: {hide_text: true}
+    type: TextBox
+    layout_properties: {x: 180, y: 280, width: 200}
+data_bindings: []

@@ -1,0 +1,1254 @@
+The files belonging to this database system will be owned by user "tss2tss".
+This user must also own the server process.
+
+The database cluster will be initialized with locales
+  COLLATE:  en_US.UTF-8
+  CTYPE:    en_US.UTF-8
+  MESSAGES: en_US.UTF-8
+  MONETARY: th_TH.UTF-8
+  NUMERIC:  th_TH.UTF-8
+  TIME:     th_TH.UTF-8
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory .anvil-data/db ... ok
+creating subdirectories ... ok
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default timezone ... Asia/Bangkok
+selecting dynamic shared memory implementation ... posix
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    .anvil-data/db-bin/PG-f2e3e42c260d3a84f6730bd8bccfb393/bin/pg_ctl -D .anvil-data/db -l logfile start
+
+2023-12-01 10:27:54.371 +07 [3553107] LOG:  listening on IPv4 address "127.0.0.1", port 42537
+2023-12-01 10:27:54.371 +07 [3553107] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42537"
+2023-12-01 10:27:54.392 +07 [3553109] LOG:  database system was shut down at 2023-12-01 10:27:52 +07
+2023-12-01 10:27:54.394 +07 [3553107] LOG:  database system is ready to accept connections
+2023-12-01 10:27:54.467 +07 [3553117] LOG:  incomplete startup packet
+waiting for server to shut down....2023-12-01 10:27:54.546 +07 [3553107] LOG:  received fast shutdown request
+2023-12-01 10:27:54.546 +07 [3553107] LOG:  aborting any active transactions
+2023-12-01 10:27:54.547 +07 [3553107] LOG:  worker process: logical replication launcher (PID 3553116) exited with exit code 1
+2023-12-01 10:27:54.547 +07 [3553110] LOG:  shutting down
+2023-12-01 10:27:54.552 +07 [3553107] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:27:54.652 +07 [3553123] LOG:  listening on IPv4 address "127.0.0.1", port 42537
+2023-12-01 10:27:54.652 +07 [3553123] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42537"
+2023-12-01 10:27:54.663 +07 [3553124] LOG:  database system was shut down at 2023-12-01 10:27:54 +07
+2023-12-01 10:27:54.665 +07 [3553123] LOG:  database system is ready to accept connections
+2023-12-01 10:27:54.751 +07 [3553134] LOG:  incomplete startup packet
+2023-12-01 10:27:55.444 +07 [3553148] ERROR:  relation "db_version" does not exist at character 42
+2023-12-01 10:27:55.444 +07 [3553148] STATEMENT:  SELECT 'Test for presence of table' FROM db_version LIMIT 1
+2023-12-01 10:31:38.222 +07 [3553123] LOG:  received fast shutdown request
+2023-12-01 10:31:38.223 +07 [3553123] LOG:  aborting any active transactions
+2023-12-01 10:31:38.223 +07 [3553164] FATAL:  terminating connection due to administrator command
+2023-12-01 10:31:38.223 +07 [3553165] FATAL:  terminating connection due to administrator command
+2023-12-01 10:31:38.223 +07 [3553163] FATAL:  terminating connection due to administrator command
+2023-12-01 10:31:38.230 +07 [3553123] LOG:  worker process: logical replication launcher (PID 3553130) exited with exit code 1
+2023-12-01 10:31:38.231 +07 [3553125] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:31:38.263 +07 [3553123] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:31:44.171 +07 [3555796] LOG:  listening on IPv4 address "127.0.0.1", port 44509
+2023-12-01 10:31:44.171 +07 [3555796] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44509"
+2023-12-01 10:31:44.182 +07 [3555797] LOG:  database system was shut down at 2023-12-01 10:31:38 +07
+2023-12-01 10:31:44.184 +07 [3555796] LOG:  database system is ready to accept connections
+2023-12-01 10:31:44.272 +07 [3555804] LOG:  incomplete startup packet
+2023-12-01 10:32:10.264 +07 [3555796] LOG:  received fast shutdown request
+2023-12-01 10:32:10.264 +07 [3555796] LOG:  aborting any active transactions
+2023-12-01 10:32:10.264 +07 [3555828] FATAL:  terminating connection due to administrator command
+2023-12-01 10:32:10.264 +07 [3555829] FATAL:  terminating connection due to administrator command
+2023-12-01 10:32:10.267 +07 [3555830] FATAL:  terminating connection due to administrator command
+2023-12-01 10:32:10.270 +07 [3555796] LOG:  worker process: logical replication launcher (PID 3555803) exited with exit code 1
+2023-12-01 10:32:10.272 +07 [3555798] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:32:10.285 +07 [3555796] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:32:17.017 +07 [3556271] LOG:  listening on IPv4 address "127.0.0.1", port 41959
+2023-12-01 10:32:17.017 +07 [3556271] LOG:  listening on Unix socket "/tmp/.s.PGSQL.41959"
+2023-12-01 10:32:17.028 +07 [3556272] LOG:  database system was shut down at 2023-12-01 10:32:10 +07
+2023-12-01 10:32:17.030 +07 [3556271] LOG:  database system is ready to accept connections
+2023-12-01 10:32:17.118 +07 [3556279] LOG:  incomplete startup packet
+2023-12-01 10:33:05.690 +07 [3556271] LOG:  received fast shutdown request
+2023-12-01 10:33:05.690 +07 [3556271] LOG:  aborting any active transactions
+2023-12-01 10:33:05.690 +07 [3556301] FATAL:  terminating connection due to administrator command
+2023-12-01 10:33:05.690 +07 [3556300] FATAL:  terminating connection due to administrator command
+2023-12-01 10:33:05.690 +07 [3556302] FATAL:  terminating connection due to administrator command
+2023-12-01 10:33:05.694 +07 [3556271] LOG:  worker process: logical replication launcher (PID 3556278) exited with exit code 1
+2023-12-01 10:33:05.697 +07 [3556273] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:33:05.718 +07 [3556271] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:33:11.244 +07 [3556990] LOG:  listening on IPv4 address "127.0.0.1", port 38931
+2023-12-01 10:33:11.244 +07 [3556990] LOG:  listening on Unix socket "/tmp/.s.PGSQL.38931"
+2023-12-01 10:33:11.258 +07 [3556992] LOG:  database system was shut down at 2023-12-01 10:33:05 +07
+2023-12-01 10:33:11.260 +07 [3556990] LOG:  database system is ready to accept connections
+2023-12-01 10:33:11.345 +07 [3556999] LOG:  incomplete startup packet
+2023-12-01 10:36:21.993 +07 [3556990] LOG:  received fast shutdown request
+2023-12-01 10:36:21.993 +07 [3556990] LOG:  aborting any active transactions
+2023-12-01 10:36:21.993 +07 [3557041] FATAL:  terminating connection due to administrator command
+2023-12-01 10:36:21.993 +07 [3557040] FATAL:  terminating connection due to administrator command
+2023-12-01 10:36:21.996 +07 [3556990] LOG:  worker process: logical replication launcher (PID 3556998) exited with exit code 1
+2023-12-01 10:36:21.993 +07 [3557042] FATAL:  terminating connection due to administrator command
+2023-12-01 10:36:22.002 +07 [3556993] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:36:22.025 +07 [3556990] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:36:28.473 +07 [3559279] LOG:  listening on IPv4 address "127.0.0.1", port 41493
+2023-12-01 10:36:28.473 +07 [3559279] LOG:  listening on Unix socket "/tmp/.s.PGSQL.41493"
+2023-12-01 10:36:28.484 +07 [3559280] LOG:  database system was shut down at 2023-12-01 10:36:22 +07
+2023-12-01 10:36:28.486 +07 [3559279] LOG:  database system is ready to accept connections
+2023-12-01 10:36:28.574 +07 [3559287] LOG:  incomplete startup packet
+2023-12-01 10:41:38.977 +07 [3559279] LOG:  received fast shutdown request
+2023-12-01 10:41:38.977 +07 [3559279] LOG:  aborting any active transactions
+2023-12-01 10:41:38.977 +07 [3559309] FATAL:  terminating connection due to administrator command
+2023-12-01 10:41:38.977 +07 [3559308] FATAL:  terminating connection due to administrator command
+2023-12-01 10:41:38.981 +07 [3559307] FATAL:  terminating connection due to administrator command
+2023-12-01 10:41:38.982 +07 [3559279] LOG:  worker process: logical replication launcher (PID 3559286) exited with exit code 1
+2023-12-01 10:41:38.986 +07 [3559281] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:41:39.008 +07 [3559279] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:41:44.339 +07 [3562733] LOG:  listening on IPv4 address "127.0.0.1", port 32791
+2023-12-01 10:41:44.339 +07 [3562733] LOG:  listening on Unix socket "/tmp/.s.PGSQL.32791"
+2023-12-01 10:41:44.350 +07 [3562735] LOG:  database system was shut down at 2023-12-01 10:41:38 +07
+2023-12-01 10:41:44.353 +07 [3562733] LOG:  database system is ready to accept connections
+2023-12-01 10:41:44.439 +07 [3562743] LOG:  incomplete startup packet
+2023-12-01 10:43:56.256 +07 [3562733] LOG:  received fast shutdown request
+2023-12-01 10:43:56.256 +07 [3562733] LOG:  aborting any active transactions
+2023-12-01 10:43:56.256 +07 [3562768] FATAL:  terminating connection due to administrator command
+2023-12-01 10:43:56.256 +07 [3562766] FATAL:  terminating connection due to administrator command
+2023-12-01 10:43:56.260 +07 [3562767] FATAL:  terminating connection due to administrator command
+2023-12-01 10:43:56.260 +07 [3562733] LOG:  worker process: logical replication launcher (PID 3562741) exited with exit code 1
+2023-12-01 10:43:56.264 +07 [3562736] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:43:56.287 +07 [3562733] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:44:02.069 +07 [3564396] LOG:  listening on IPv4 address "127.0.0.1", port 34011
+2023-12-01 10:44:02.069 +07 [3564396] LOG:  listening on Unix socket "/tmp/.s.PGSQL.34011"
+2023-12-01 10:44:02.081 +07 [3564397] LOG:  database system was shut down at 2023-12-01 10:43:56 +07
+2023-12-01 10:44:02.082 +07 [3564396] LOG:  database system is ready to accept connections
+2023-12-01 10:44:02.170 +07 [3564407] LOG:  incomplete startup packet
+2023-12-01 10:45:18.019 +07 [3564396] LOG:  received fast shutdown request
+2023-12-01 10:45:18.019 +07 [3564396] LOG:  aborting any active transactions
+2023-12-01 10:45:18.019 +07 [3564427] FATAL:  terminating connection due to administrator command
+2023-12-01 10:45:18.019 +07 [3564426] FATAL:  terminating connection due to administrator command
+2023-12-01 10:45:18.020 +07 [3564425] FATAL:  terminating connection due to administrator command
+2023-12-01 10:45:18.026 +07 [3564396] LOG:  worker process: logical replication launcher (PID 3564403) exited with exit code 1
+2023-12-01 10:45:18.026 +07 [3564398] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:45:18.049 +07 [3564396] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:45:23.700 +07 [3565486] LOG:  listening on IPv4 address "127.0.0.1", port 38069
+2023-12-01 10:45:23.700 +07 [3565486] LOG:  listening on Unix socket "/tmp/.s.PGSQL.38069"
+2023-12-01 10:45:23.712 +07 [3565487] LOG:  database system was shut down at 2023-12-01 10:45:18 +07
+2023-12-01 10:45:23.713 +07 [3565486] LOG:  database system is ready to accept connections
+2023-12-01 10:45:23.802 +07 [3565494] LOG:  incomplete startup packet
+2023-12-01 10:48:05.945 +07 [3565486] LOG:  received fast shutdown request
+2023-12-01 10:48:05.946 +07 [3565486] LOG:  aborting any active transactions
+2023-12-01 10:48:05.946 +07 [3565515] FATAL:  terminating connection due to administrator command
+2023-12-01 10:48:05.946 +07 [3565516] FATAL:  terminating connection due to administrator command
+2023-12-01 10:48:05.946 +07 [3565514] FATAL:  terminating connection due to administrator command
+2023-12-01 10:48:05.949 +07 [3565486] LOG:  worker process: logical replication launcher (PID 3565493) exited with exit code 1
+2023-12-01 10:48:05.953 +07 [3565488] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:48:05.975 +07 [3565486] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:48:12.739 +07 [3567866] LOG:  listening on IPv4 address "127.0.0.1", port 32955
+2023-12-01 10:48:12.739 +07 [3567866] LOG:  listening on Unix socket "/tmp/.s.PGSQL.32955"
+2023-12-01 10:48:12.751 +07 [3567867] LOG:  database system was shut down at 2023-12-01 10:48:05 +07
+2023-12-01 10:48:12.752 +07 [3567866] LOG:  database system is ready to accept connections
+2023-12-01 10:48:12.840 +07 [3567874] LOG:  incomplete startup packet
+2023-12-01 10:49:38.990 +07 [3567866] LOG:  received fast shutdown request
+2023-12-01 10:49:38.991 +07 [3567866] LOG:  aborting any active transactions
+2023-12-01 10:49:38.991 +07 [3567899] FATAL:  terminating connection due to administrator command
+2023-12-01 10:49:38.991 +07 [3567898] FATAL:  terminating connection due to administrator command
+2023-12-01 10:49:38.991 +07 [3567900] FATAL:  terminating connection due to administrator command
+2023-12-01 10:49:38.994 +07 [3567866] LOG:  worker process: logical replication launcher (PID 3567873) exited with exit code 1
+2023-12-01 10:49:38.998 +07 [3567868] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:49:39.021 +07 [3567866] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:49:44.228 +07 [3569296] LOG:  listening on IPv4 address "127.0.0.1", port 39773
+2023-12-01 10:49:44.228 +07 [3569296] LOG:  listening on Unix socket "/tmp/.s.PGSQL.39773"
+2023-12-01 10:49:44.240 +07 [3569297] LOG:  database system was shut down at 2023-12-01 10:49:38 +07
+2023-12-01 10:49:44.241 +07 [3569296] LOG:  database system is ready to accept connections
+2023-12-01 10:49:44.330 +07 [3569306] LOG:  incomplete startup packet
+2023-12-01 10:50:52.716 +07 [3569296] LOG:  received fast shutdown request
+2023-12-01 10:50:52.716 +07 [3569296] LOG:  aborting any active transactions
+2023-12-01 10:50:52.716 +07 [3569332] FATAL:  terminating connection due to administrator command
+2023-12-01 10:50:52.716 +07 [3569331] FATAL:  terminating connection due to administrator command
+2023-12-01 10:50:52.716 +07 [3569330] FATAL:  terminating connection due to administrator command
+2023-12-01 10:50:52.722 +07 [3569296] LOG:  worker process: logical replication launcher (PID 3569304) exited with exit code 1
+2023-12-01 10:50:52.723 +07 [3569299] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:50:52.746 +07 [3569296] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:50:58.214 +07 [3570253] LOG:  listening on IPv4 address "127.0.0.1", port 37765
+2023-12-01 10:50:58.214 +07 [3570253] LOG:  listening on Unix socket "/tmp/.s.PGSQL.37765"
+2023-12-01 10:50:58.225 +07 [3570254] LOG:  database system was shut down at 2023-12-01 10:50:52 +07
+2023-12-01 10:50:58.227 +07 [3570253] LOG:  database system is ready to accept connections
+2023-12-01 10:50:58.315 +07 [3570261] LOG:  incomplete startup packet
+2023-12-01 10:52:10.925 +07 [3570253] LOG:  received fast shutdown request
+2023-12-01 10:52:10.925 +07 [3570253] LOG:  aborting any active transactions
+2023-12-01 10:52:10.926 +07 [3570284] FATAL:  terminating connection due to administrator command
+2023-12-01 10:52:10.926 +07 [3570283] FATAL:  terminating connection due to administrator command
+2023-12-01 10:52:10.926 +07 [3570253] LOG:  worker process: logical replication launcher (PID 3570260) exited with exit code 1
+2023-12-01 10:52:10.926 +07 [3570285] FATAL:  terminating connection due to administrator command
+waiting for server to shut down....2023-12-01 10:52:10.929 +07 [3570255] LOG:  shutting down
+2023-12-01 10:52:10.934 +07 [3570253] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:53:22.471 +07 [3572007] LOG:  listening on IPv4 address "127.0.0.1", port 40923
+2023-12-01 10:53:22.471 +07 [3572007] LOG:  listening on Unix socket "/tmp/.s.PGSQL.40923"
+2023-12-01 10:53:22.482 +07 [3572008] LOG:  database system was shut down at 2023-12-01 10:52:10 +07
+2023-12-01 10:53:22.484 +07 [3572007] LOG:  database system is ready to accept connections
+2023-12-01 10:53:22.572 +07 [3572015] LOG:  incomplete startup packet
+2023-12-01 10:53:43.796 +07 [3572007] LOG:  received fast shutdown request
+2023-12-01 10:53:43.796 +07 [3572007] LOG:  aborting any active transactions
+2023-12-01 10:53:43.796 +07 [3572037] FATAL:  terminating connection due to administrator command
+2023-12-01 10:53:43.796 +07 [3572036] FATAL:  terminating connection due to administrator command
+2023-12-01 10:53:43.796 +07 [3572035] FATAL:  terminating connection due to administrator command
+2023-12-01 10:53:43.800 +07 [3572007] LOG:  worker process: logical replication launcher (PID 3572014) exited with exit code 1
+2023-12-01 10:53:43.803 +07 [3572009] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:53:43.824 +07 [3572007] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:54:27.645 +07 [3572796] LOG:  listening on IPv4 address "127.0.0.1", port 42953
+2023-12-01 10:54:27.645 +07 [3572796] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42953"
+2023-12-01 10:54:27.657 +07 [3572797] LOG:  database system was shut down at 2023-12-01 10:53:43 +07
+2023-12-01 10:54:27.658 +07 [3572796] LOG:  database system is ready to accept connections
+2023-12-01 10:54:27.746 +07 [3572804] LOG:  incomplete startup packet
+2023-12-01 10:58:20.338 +07 [3572796] LOG:  received fast shutdown request
+2023-12-01 10:58:20.338 +07 [3572796] LOG:  aborting any active transactions
+2023-12-01 10:58:20.338 +07 [3572844] FATAL:  terminating connection due to administrator command
+2023-12-01 10:58:20.338 +07 [3572846] FATAL:  terminating connection due to administrator command
+2023-12-01 10:58:20.338 +07 [3572845] FATAL:  terminating connection due to administrator command
+2023-12-01 10:58:20.340 +07 [3572796] LOG:  worker process: logical replication launcher (PID 3572803) exited with exit code 1
+2023-12-01 10:58:20.341 +07 [3572798] LOG:  shutting down
+waiting for server to shut down....2023-12-01 10:58:20.348 +07 [3572796] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:58:25.573 +07 [3575472] LOG:  listening on IPv4 address "127.0.0.1", port 45495
+2023-12-01 10:58:25.573 +07 [3575472] LOG:  listening on Unix socket "/tmp/.s.PGSQL.45495"
+2023-12-01 10:58:25.584 +07 [3575473] LOG:  database system was shut down at 2023-12-01 10:58:20 +07
+2023-12-01 10:58:25.586 +07 [3575472] LOG:  database system is ready to accept connections
+2023-12-01 10:58:25.674 +07 [3575480] LOG:  incomplete startup packet
+2023-12-01 10:58:41.252 +07 [3575472] LOG:  received fast shutdown request
+2023-12-01 10:58:41.253 +07 [3575472] LOG:  aborting any active transactions
+2023-12-01 10:58:41.253 +07 [3575509] FATAL:  terminating connection due to administrator command
+2023-12-01 10:58:41.253 +07 [3575508] FATAL:  terminating connection due to administrator command
+2023-12-01 10:58:41.256 +07 [3575510] FATAL:  terminating connection due to administrator command
+waiting for server to shut down....2023-12-01 10:58:41.263 +07 [3575472] LOG:  worker process: logical replication launcher (PID 3575479) exited with exit code 1
+2023-12-01 10:58:41.263 +07 [3575474] LOG:  shutting down
+2023-12-01 10:58:41.285 +07 [3575472] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 10:58:46.674 +07 [3575810] LOG:  listening on IPv4 address "127.0.0.1", port 46157
+2023-12-01 10:58:46.674 +07 [3575810] LOG:  listening on Unix socket "/tmp/.s.PGSQL.46157"
+2023-12-01 10:58:46.685 +07 [3575811] LOG:  database system was shut down at 2023-12-01 10:58:41 +07
+2023-12-01 10:58:46.686 +07 [3575810] LOG:  database system is ready to accept connections
+2023-12-01 10:58:46.783 +07 [3575818] LOG:  incomplete startup packet
+2023-12-01 11:01:24.746 +07 [3575810] LOG:  received fast shutdown request
+2023-12-01 11:01:24.746 +07 [3575810] LOG:  aborting any active transactions
+2023-12-01 11:01:24.747 +07 [3575844] FATAL:  terminating connection due to administrator command
+2023-12-01 11:01:24.749 +07 [3575842] FATAL:  terminating connection due to administrator command
+2023-12-01 11:01:24.750 +07 [3575843] FATAL:  terminating connection due to administrator command
+2023-12-01 11:01:24.750 +07 [3575810] LOG:  worker process: logical replication launcher (PID 3575817) exited with exit code 1
+2023-12-01 11:01:24.755 +07 [3575812] LOG:  shutting down
+waiting for server to shut down....2023-12-01 11:01:24.777 +07 [3575810] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 11:01:36.148 +07 [3577777] LOG:  listening on IPv4 address "127.0.0.1", port 35919
+2023-12-01 11:01:36.148 +07 [3577777] LOG:  listening on Unix socket "/tmp/.s.PGSQL.35919"
+2023-12-01 11:01:36.160 +07 [3577779] LOG:  database system was shut down at 2023-12-01 11:01:24 +07
+2023-12-01 11:01:36.161 +07 [3577777] LOG:  database system is ready to accept connections
+2023-12-01 11:01:36.249 +07 [3577788] LOG:  incomplete startup packet
+2023-12-01 11:03:15.387 +07 [3577777] LOG:  received fast shutdown request
+2023-12-01 11:03:15.387 +07 [3577777] LOG:  aborting any active transactions
+2023-12-01 11:03:15.387 +07 [3577810] FATAL:  terminating connection due to administrator command
+2023-12-01 11:03:15.387 +07 [3577809] FATAL:  terminating connection due to administrator command
+2023-12-01 11:03:15.388 +07 [3577808] FATAL:  terminating connection due to administrator command
+2023-12-01 11:03:15.396 +07 [3577777] LOG:  worker process: logical replication launcher (PID 3577785) exited with exit code 1
+2023-12-01 11:03:15.398 +07 [3577780] LOG:  shutting down
+waiting for server to shut down....2023-12-01 11:03:15.411 +07 [3577777] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 11:03:26.426 +07 [3579056] LOG:  listening on IPv4 address "127.0.0.1", port 43311
+2023-12-01 11:03:26.427 +07 [3579056] LOG:  listening on Unix socket "/tmp/.s.PGSQL.43311"
+2023-12-01 11:03:26.438 +07 [3579057] LOG:  database system was shut down at 2023-12-01 11:03:15 +07
+2023-12-01 11:03:26.440 +07 [3579056] LOG:  database system is ready to accept connections
+2023-12-01 11:03:26.528 +07 [3579067] LOG:  incomplete startup packet
+2023-12-01 11:03:55.257 +07 [3579056] LOG:  received fast shutdown request
+2023-12-01 11:03:55.257 +07 [3579056] LOG:  aborting any active transactions
+2023-12-01 11:03:55.257 +07 [3579093] FATAL:  terminating connection due to administrator command
+2023-12-01 11:03:55.258 +07 [3579092] FATAL:  terminating connection due to administrator command
+2023-12-01 11:03:55.260 +07 [3579091] FATAL:  terminating connection due to administrator command
+2023-12-01 11:03:55.262 +07 [3579056] LOG:  worker process: logical replication launcher (PID 3579063) exited with exit code 1
+2023-12-01 11:03:55.262 +07 [3579058] LOG:  shutting down
+waiting for server to shut down....2023-12-01 11:03:55.267 +07 [3579056] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 11:04:00.669 +07 [3579601] LOG:  listening on IPv4 address "127.0.0.1", port 36803
+2023-12-01 11:04:00.669 +07 [3579601] LOG:  listening on Unix socket "/tmp/.s.PGSQL.36803"
+2023-12-01 11:04:00.680 +07 [3579602] LOG:  database system was shut down at 2023-12-01 11:03:55 +07
+2023-12-01 11:04:00.682 +07 [3579601] LOG:  database system is ready to accept connections
+2023-12-01 11:04:00.770 +07 [3579609] LOG:  incomplete startup packet
+2023-12-01 14:51:52.057 +07 [3579601] LOG:  received fast shutdown request
+2023-12-01 14:51:52.069 +07 [3579601] LOG:  aborting any active transactions
+2023-12-01 14:51:52.070 +07 [3690823] FATAL:  terminating connection due to administrator command
+2023-12-01 14:51:52.070 +07 [3690824] FATAL:  terminating connection due to administrator command
+2023-12-01 14:51:52.070 +07 [3690822] FATAL:  terminating connection due to administrator command
+2023-12-01 14:51:52.071 +07 [3579601] LOG:  worker process: logical replication launcher (PID 3579608) exited with exit code 1
+2023-12-01 14:51:52.072 +07 [3579603] LOG:  shutting down
+2023-12-01 14:51:52.078 +07 [3579601] LOG:  database system is shut down
+pg_ctl: PID file ".anvil-data/db/postmaster.pid" does not exist
+Is server running?
+2023-12-01 14:51:57.760 +07 [3720952] LOG:  listening on IPv4 address "127.0.0.1", port 44957
+2023-12-01 14:51:57.760 +07 [3720952] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44957"
+2023-12-01 14:51:57.800 +07 [3720955] LOG:  incomplete startup packet
+2023-12-01 14:51:57.800 +07 [3720954] LOG:  database system was shut down at 2023-12-01 14:51:52 +07
+2023-12-01 14:51:57.803 +07 [3720952] LOG:  database system is ready to accept connections
+2023-12-01 14:53:47.723 +07 [3720952] LOG:  received fast shutdown request
+2023-12-01 14:53:47.723 +07 [3720952] LOG:  aborting any active transactions
+2023-12-01 14:53:47.723 +07 [3720984] FATAL:  terminating connection due to administrator command
+2023-12-01 14:53:47.723 +07 [3720985] FATAL:  terminating connection due to administrator command
+2023-12-01 14:53:47.724 +07 [3720983] FATAL:  terminating connection due to administrator command
+2023-12-01 14:53:47.726 +07 [3720952] LOG:  worker process: logical replication launcher (PID 3720961) exited with exit code 1
+2023-12-01 14:53:47.727 +07 [3720956] LOG:  shutting down
+waiting for server to shut down....2023-12-01 14:53:47.732 +07 [3720952] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 14:56:30.514 +07 [3724075] LOG:  listening on IPv4 address "127.0.0.1", port 42189
+2023-12-01 14:56:30.514 +07 [3724075] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42189"
+2023-12-01 14:56:30.525 +07 [3724076] LOG:  database system was shut down at 2023-12-01 14:53:47 +07
+2023-12-01 14:56:30.527 +07 [3724075] LOG:  database system is ready to accept connections
+2023-12-01 14:56:30.615 +07 [3724083] LOG:  incomplete startup packet
+2023-12-01 14:57:37.699 +07 [3724075] LOG:  received fast shutdown request
+2023-12-01 14:57:37.699 +07 [3724075] LOG:  aborting any active transactions
+2023-12-01 14:57:37.699 +07 [3724108] FATAL:  terminating connection due to administrator command
+2023-12-01 14:57:37.699 +07 [3724106] FATAL:  terminating connection due to administrator command
+2023-12-01 14:57:37.702 +07 [3724107] FATAL:  terminating connection due to administrator command
+2023-12-01 14:57:37.703 +07 [3724075] LOG:  worker process: logical replication launcher (PID 3724082) exited with exit code 1
+waiting for server to shut down....2023-12-01 14:57:37.713 +07 [3724077] LOG:  shutting down
+2023-12-01 14:57:37.731 +07 [3724075] LOG:  database system is shut down
+ done
+server stopped
+2023-12-01 14:57:42.899 +07 [3724943] LOG:  listening on IPv4 address "127.0.0.1", port 32993
+2023-12-01 14:57:42.899 +07 [3724943] LOG:  listening on Unix socket "/tmp/.s.PGSQL.32993"
+2023-12-01 14:57:42.910 +07 [3724944] LOG:  database system was shut down at 2023-12-01 14:57:37 +07
+2023-12-01 14:57:42.912 +07 [3724943] LOG:  database system is ready to accept connections
+2023-12-01 14:57:42.999 +07 [3724952] LOG:  incomplete startup packet
+2023-12-02 11:56:07.120 +07 [3724943] LOG:  received fast shutdown request
+waiting for server to shut down...2023-12-02 11:56:07.141 +07 [3724943] LOG:  aborting any active transactions
+.2023-12-02 11:56:07.141 +07 [288402] FATAL:  terminating connection due to administrator command
+2023-12-02 11:56:07.141 +07 [288401] FATAL:  terminating connection due to administrator command
+2023-12-02 11:56:07.141 +07 [288400] FATAL:  terminating connection due to administrator command
+2023-12-02 11:56:07.144 +07 [3724943] LOG:  worker process: logical replication launcher (PID 3724950) exited with exit code 1
+2023-12-02 11:56:07.144 +07 [3724945] LOG:  shutting down
+2023-12-02 11:56:07.151 +07 [3724943] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 11:56:13.262 +07 [326426] LOG:  listening on IPv4 address "127.0.0.1", port 45433
+2023-12-02 11:56:13.262 +07 [326426] LOG:  listening on Unix socket "/tmp/.s.PGSQL.45433"
+2023-12-02 11:56:13.273 +07 [326427] LOG:  database system was shut down at 2023-12-02 11:56:07 +07
+2023-12-02 11:56:13.275 +07 [326426] LOG:  database system is ready to accept connections
+2023-12-02 11:56:13.362 +07 [326434] LOG:  incomplete startup packet
+2023-12-02 12:06:37.624 +07 [326426] LOG:  received fast shutdown request
+2023-12-02 12:06:37.624 +07 [326426] LOG:  aborting any active transactions
+2023-12-02 12:06:37.624 +07 [326457] FATAL:  terminating connection due to administrator command
+2023-12-02 12:06:37.624 +07 [326456] FATAL:  terminating connection due to administrator command
+2023-12-02 12:06:37.626 +07 [326455] FATAL:  terminating connection due to administrator command
+2023-12-02 12:06:37.633 +07 [326426] LOG:  worker process: logical replication launcher (PID 326433) exited with exit code 1
+2023-12-02 12:06:37.633 +07 [326428] LOG:  shutting down
+waiting for server to shut down....2023-12-02 12:06:37.654 +07 [326426] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:06:48.920 +07 [333181] LOG:  listening on IPv4 address "127.0.0.1", port 39645
+2023-12-02 12:06:48.921 +07 [333181] LOG:  listening on Unix socket "/tmp/.s.PGSQL.39645"
+2023-12-02 12:06:48.932 +07 [333182] LOG:  database system was shut down at 2023-12-02 12:06:37 +07
+2023-12-02 12:06:48.933 +07 [333181] LOG:  database system is ready to accept connections
+2023-12-02 12:06:49.022 +07 [333189] LOG:  incomplete startup packet
+2023-12-02 12:17:16.431 +07 [333181] LOG:  received fast shutdown request
+2023-12-02 12:17:16.431 +07 [333181] LOG:  aborting any active transactions
+2023-12-02 12:17:16.431 +07 [333211] FATAL:  terminating connection due to administrator command
+2023-12-02 12:17:16.431 +07 [333210] FATAL:  terminating connection due to administrator command
+2023-12-02 12:17:16.432 +07 [333209] FATAL:  terminating connection due to administrator command
+2023-12-02 12:17:16.436 +07 [333181] LOG:  worker process: logical replication launcher (PID 333188) exited with exit code 1
+2023-12-02 12:17:16.438 +07 [333183] LOG:  shutting down
+waiting for server to shut down....2023-12-02 12:17:16.459 +07 [333181] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:25:26.100 +07 [345470] LOG:  listening on IPv4 address "127.0.0.1", port 44213
+2023-12-02 12:25:26.100 +07 [345470] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44213"
+2023-12-02 12:25:26.112 +07 [345471] LOG:  database system was shut down at 2023-12-02 12:17:16 +07
+2023-12-02 12:25:26.114 +07 [345470] LOG:  database system is ready to accept connections
+2023-12-02 12:25:26.199 +07 [345478] LOG:  incomplete startup packet
+2023-12-02 12:25:50.989 +07 [345470] LOG:  received fast shutdown request
+2023-12-02 12:25:50.989 +07 [345470] LOG:  aborting any active transactions
+2023-12-02 12:25:50.990 +07 [345500] FATAL:  terminating connection due to administrator command
+2023-12-02 12:25:50.990 +07 [345498] FATAL:  terminating connection due to administrator command
+2023-12-02 12:25:50.993 +07 [345499] FATAL:  terminating connection due to administrator command
+2023-12-02 12:25:50.995 +07 [345470] LOG:  worker process: logical replication launcher (PID 345477) exited with exit code 1
+2023-12-02 12:25:50.998 +07 [345472] LOG:  shutting down
+waiting for server to shut down....2023-12-02 12:25:51.022 +07 [345470] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:26:10.915 +07 [346118] LOG:  listening on IPv4 address "127.0.0.1", port 44869
+2023-12-02 12:26:10.916 +07 [346118] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44869"
+2023-12-02 12:26:10.928 +07 [346120] LOG:  database system was shut down at 2023-12-02 12:25:50 +07
+2023-12-02 12:26:10.929 +07 [346118] LOG:  database system is ready to accept connections
+2023-12-02 12:26:11.017 +07 [346127] LOG:  incomplete startup packet
+2023-12-02 12:30:12.453 +07 [346118] LOG:  received fast shutdown request
+2023-12-02 12:30:12.453 +07 [346118] LOG:  aborting any active transactions
+2023-12-02 12:30:12.453 +07 [346152] FATAL:  terminating connection due to administrator command
+2023-12-02 12:30:12.454 +07 [346150] FATAL:  terminating connection due to administrator command
+2023-12-02 12:30:12.456 +07 [346151] FATAL:  terminating connection due to administrator command
+2023-12-02 12:30:12.457 +07 [346118] LOG:  worker process: logical replication launcher (PID 346126) exited with exit code 1
+waiting for server to shut down....2023-12-02 12:30:12.457 +07 [346121] LOG:  shutting down
+2023-12-02 12:30:12.463 +07 [346118] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:30:18.273 +07 [348991] LOG:  listening on IPv4 address "127.0.0.1", port 34529
+2023-12-02 12:30:18.274 +07 [348991] LOG:  listening on Unix socket "/tmp/.s.PGSQL.34529"
+2023-12-02 12:30:18.286 +07 [348992] LOG:  database system was shut down at 2023-12-02 12:30:12 +07
+2023-12-02 12:30:18.288 +07 [348991] LOG:  database system is ready to accept connections
+2023-12-02 12:30:18.373 +07 [348999] LOG:  incomplete startup packet
+2023-12-02 12:31:08.022 +07 [348991] LOG:  received fast shutdown request
+2023-12-02 12:31:08.022 +07 [348991] LOG:  aborting any active transactions
+2023-12-02 12:31:08.023 +07 [349021] FATAL:  terminating connection due to administrator command
+2023-12-02 12:31:08.023 +07 [349020] FATAL:  terminating connection due to administrator command
+2023-12-02 12:31:08.023 +07 [349019] FATAL:  terminating connection due to administrator command
+2023-12-02 12:31:08.029 +07 [348991] LOG:  worker process: logical replication launcher (PID 348998) exited with exit code 1
+2023-12-02 12:31:08.031 +07 [348993] LOG:  shutting down
+waiting for server to shut down....2023-12-02 12:31:08.045 +07 [348991] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:31:13.913 +07 [349713] LOG:  listening on IPv4 address "127.0.0.1", port 44573
+2023-12-02 12:31:13.913 +07 [349713] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44573"
+2023-12-02 12:31:13.924 +07 [349714] LOG:  database system was shut down at 2023-12-02 12:31:08 +07
+2023-12-02 12:31:13.926 +07 [349713] LOG:  database system is ready to accept connections
+2023-12-02 12:31:14.012 +07 [349721] LOG:  incomplete startup packet
+2023-12-02 12:32:45.316 +07 [349713] LOG:  received fast shutdown request
+2023-12-02 12:32:45.316 +07 [349713] LOG:  aborting any active transactions
+2023-12-02 12:32:45.316 +07 [349741] FATAL:  terminating connection due to administrator command
+2023-12-02 12:32:45.316 +07 [349740] FATAL:  terminating connection due to administrator command
+2023-12-02 12:32:45.316 +07 [349742] FATAL:  terminating connection due to administrator command
+2023-12-02 12:32:45.318 +07 [349713] LOG:  worker process: logical replication launcher (PID 349720) exited with exit code 1
+2023-12-02 12:32:45.319 +07 [349715] LOG:  shutting down
+waiting for server to shut down....2023-12-02 12:32:45.324 +07 [349713] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:32:50.698 +07 [350916] LOG:  listening on IPv4 address "127.0.0.1", port 39159
+2023-12-02 12:32:50.698 +07 [350916] LOG:  listening on Unix socket "/tmp/.s.PGSQL.39159"
+2023-12-02 12:32:50.709 +07 [350917] LOG:  database system was shut down at 2023-12-02 12:32:45 +07
+2023-12-02 12:32:50.711 +07 [350916] LOG:  database system is ready to accept connections
+2023-12-02 12:32:50.799 +07 [350924] LOG:  incomplete startup packet
+2023-12-02 12:33:18.611 +07 [350916] LOG:  received fast shutdown request
+2023-12-02 12:33:18.611 +07 [350916] LOG:  aborting any active transactions
+2023-12-02 12:33:18.611 +07 [350949] FATAL:  terminating connection due to administrator command
+2023-12-02 12:33:18.612 +07 [350947] FATAL:  terminating connection due to administrator command
+2023-12-02 12:33:18.612 +07 [350916] LOG:  worker process: logical replication launcher (PID 350923) exited with exit code 1
+2023-12-02 12:33:18.611 +07 [350948] FATAL:  terminating connection due to administrator command
+waiting for server to shut down....2023-12-02 12:33:18.613 +07 [350918] LOG:  shutting down
+2023-12-02 12:33:18.620 +07 [350916] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:33:58.683 +07 [351758] LOG:  listening on IPv4 address "127.0.0.1", port 44903
+2023-12-02 12:33:58.683 +07 [351758] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44903"
+2023-12-02 12:33:58.696 +07 [351761] LOG:  database system was shut down at 2023-12-02 12:33:18 +07
+2023-12-02 12:33:58.697 +07 [351758] LOG:  database system is ready to accept connections
+2023-12-02 12:33:58.784 +07 [351768] LOG:  incomplete startup packet
+2023-12-02 12:36:02.115 +07 [351758] LOG:  received fast shutdown request
+2023-12-02 12:36:02.115 +07 [351758] LOG:  aborting any active transactions
+2023-12-02 12:36:02.115 +07 [351788] FATAL:  terminating connection due to administrator command
+2023-12-02 12:36:02.115 +07 [351789] FATAL:  terminating connection due to administrator command
+2023-12-02 12:36:02.117 +07 [351787] FATAL:  terminating connection due to administrator command
+2023-12-02 12:36:02.118 +07 [351758] LOG:  worker process: logical replication launcher (PID 351767) exited with exit code 1
+2023-12-02 12:36:02.118 +07 [351762] LOG:  shutting down
+waiting for server to shut down....2023-12-02 12:36:02.125 +07 [351758] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:36:08.128 +07 [353253] LOG:  listening on IPv4 address "127.0.0.1", port 37787
+2023-12-02 12:36:08.128 +07 [353253] LOG:  listening on Unix socket "/tmp/.s.PGSQL.37787"
+2023-12-02 12:36:08.139 +07 [353254] LOG:  database system was shut down at 2023-12-02 12:36:02 +07
+2023-12-02 12:36:08.141 +07 [353253] LOG:  database system is ready to accept connections
+2023-12-02 12:36:08.229 +07 [353261] LOG:  incomplete startup packet
+2023-12-02 12:44:18.741 +07 [353253] LOG:  received fast shutdown request
+2023-12-02 12:44:18.741 +07 [353253] LOG:  aborting any active transactions
+2023-12-02 12:44:18.741 +07 [353282] FATAL:  terminating connection due to administrator command
+2023-12-02 12:44:18.741 +07 [353283] FATAL:  terminating connection due to administrator command
+2023-12-02 12:44:18.741 +07 [353281] FATAL:  terminating connection due to administrator command
+2023-12-02 12:44:18.746 +07 [353253] LOG:  worker process: logical replication launcher (PID 353260) exited with exit code 1
+waiting for server to shut down....2023-12-02 12:44:18.751 +07 [353255] LOG:  shutting down
+2023-12-02 12:44:18.773 +07 [353253] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:44:25.203 +07 [358701] LOG:  listening on IPv4 address "127.0.0.1", port 33597
+2023-12-02 12:44:25.203 +07 [358701] LOG:  listening on Unix socket "/tmp/.s.PGSQL.33597"
+2023-12-02 12:44:25.215 +07 [358702] LOG:  database system was shut down at 2023-12-02 12:44:18 +07
+2023-12-02 12:44:25.217 +07 [358701] LOG:  database system is ready to accept connections
+2023-12-02 12:44:25.305 +07 [358710] LOG:  incomplete startup packet
+2023-12-02 12:45:10.466 +07 [358701] LOG:  received fast shutdown request
+2023-12-02 12:45:10.466 +07 [358701] LOG:  aborting any active transactions
+2023-12-02 12:45:10.466 +07 [358733] FATAL:  terminating connection due to administrator command
+2023-12-02 12:45:10.466 +07 [358732] FATAL:  terminating connection due to administrator command
+2023-12-02 12:45:10.468 +07 [358734] FATAL:  terminating connection due to administrator command
+2023-12-02 12:45:10.472 +07 [358701] LOG:  worker process: logical replication launcher (PID 358708) exited with exit code 1
+2023-12-02 12:45:10.474 +07 [358703] LOG:  shutting down
+waiting for server to shut down....2023-12-02 12:45:10.497 +07 [358701] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:45:15.972 +07 [359374] LOG:  listening on IPv4 address "127.0.0.1", port 36001
+2023-12-02 12:45:15.972 +07 [359374] LOG:  listening on Unix socket "/tmp/.s.PGSQL.36001"
+2023-12-02 12:45:15.983 +07 [359375] LOG:  database system was shut down at 2023-12-02 12:45:10 +07
+2023-12-02 12:45:15.985 +07 [359374] LOG:  database system is ready to accept connections
+2023-12-02 12:45:16.071 +07 [359383] LOG:  incomplete startup packet
+2023-12-02 12:45:48.648 +07 [359374] LOG:  received fast shutdown request
+2023-12-02 12:45:48.648 +07 [359374] LOG:  aborting any active transactions
+2023-12-02 12:45:48.648 +07 [359405] FATAL:  terminating connection due to administrator command
+2023-12-02 12:45:48.648 +07 [359407] FATAL:  terminating connection due to administrator command
+2023-12-02 12:45:48.648 +07 [359406] FATAL:  terminating connection due to administrator command
+2023-12-02 12:45:48.652 +07 [359374] LOG:  worker process: logical replication launcher (PID 359381) exited with exit code 1
+2023-12-02 12:45:48.656 +07 [359376] LOG:  shutting down
+waiting for server to shut down....2023-12-02 12:45:48.680 +07 [359374] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 12:45:54.213 +07 [359923] LOG:  listening on IPv4 address "127.0.0.1", port 39275
+2023-12-02 12:45:54.213 +07 [359923] LOG:  listening on Unix socket "/tmp/.s.PGSQL.39275"
+2023-12-02 12:45:54.224 +07 [359924] LOG:  database system was shut down at 2023-12-02 12:45:48 +07
+2023-12-02 12:45:54.226 +07 [359923] LOG:  database system is ready to accept connections
+2023-12-02 12:45:54.313 +07 [359931] LOG:  incomplete startup packet
+2023-12-02 13:05:40.169 +07 [359923] LOG:  received fast shutdown request
+2023-12-02 13:05:40.169 +07 [359923] LOG:  aborting any active transactions
+2023-12-02 13:05:40.169 +07 [359959] FATAL:  terminating connection due to administrator command
+2023-12-02 13:05:40.169 +07 [359961] FATAL:  terminating connection due to administrator command
+2023-12-02 13:05:40.169 +07 [359960] FATAL:  terminating connection due to administrator command
+2023-12-02 13:05:40.174 +07 [359923] LOG:  worker process: logical replication launcher (PID 359930) exited with exit code 1
+2023-12-02 13:05:40.175 +07 [359925] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:05:40.196 +07 [359923] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:07:39.086 +07 [374992] LOG:  listening on IPv4 address "127.0.0.1", port 41933
+2023-12-02 13:07:39.086 +07 [374992] LOG:  listening on Unix socket "/tmp/.s.PGSQL.41933"
+2023-12-02 13:07:39.098 +07 [374993] LOG:  database system was shut down at 2023-12-02 13:05:40 +07
+2023-12-02 13:07:39.099 +07 [374992] LOG:  database system is ready to accept connections
+2023-12-02 13:07:39.187 +07 [375000] LOG:  incomplete startup packet
+2023-12-02 13:09:03.494 +07 [374992] LOG:  received fast shutdown request
+2023-12-02 13:09:03.494 +07 [374992] LOG:  aborting any active transactions
+2023-12-02 13:09:03.494 +07 [375027] FATAL:  terminating connection due to administrator command
+2023-12-02 13:09:03.494 +07 [375026] FATAL:  terminating connection due to administrator command
+2023-12-02 13:09:03.495 +07 [375025] FATAL:  terminating connection due to administrator command
+2023-12-02 13:09:03.499 +07 [374992] LOG:  worker process: logical replication launcher (PID 374999) exited with exit code 1
+2023-12-02 13:09:03.499 +07 [374994] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:09:03.504 +07 [374992] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:09:39.268 +07 [376456] LOG:  listening on IPv4 address "127.0.0.1", port 40805
+2023-12-02 13:09:39.268 +07 [376456] LOG:  listening on Unix socket "/tmp/.s.PGSQL.40805"
+2023-12-02 13:09:39.279 +07 [376457] LOG:  database system was shut down at 2023-12-02 13:09:03 +07
+2023-12-02 13:09:39.281 +07 [376456] LOG:  database system is ready to accept connections
+2023-12-02 13:09:39.369 +07 [376464] LOG:  incomplete startup packet
+2023-12-02 13:11:07.023 +07 [376456] LOG:  received fast shutdown request
+2023-12-02 13:11:07.023 +07 [376456] LOG:  aborting any active transactions
+2023-12-02 13:11:07.023 +07 [376489] FATAL:  terminating connection due to administrator command
+2023-12-02 13:11:07.027 +07 [376490] FATAL:  terminating connection due to administrator command
+2023-12-02 13:11:07.027 +07 [376456] LOG:  worker process: logical replication launcher (PID 376463) exited with exit code 1
+waiting for server to shut down....2023-12-02 13:11:07.030 +07 [376488] FATAL:  terminating connection due to administrator command
+2023-12-02 13:11:07.034 +07 [376458] LOG:  shutting down
+2023-12-02 13:11:07.057 +07 [376456] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:13:39.629 +07 [379126] LOG:  listening on IPv4 address "127.0.0.1", port 40955
+2023-12-02 13:13:39.629 +07 [379126] LOG:  listening on Unix socket "/tmp/.s.PGSQL.40955"
+2023-12-02 13:13:39.640 +07 [379127] LOG:  database system was shut down at 2023-12-02 13:11:07 +07
+2023-12-02 13:13:39.642 +07 [379126] LOG:  database system is ready to accept connections
+2023-12-02 13:13:39.730 +07 [379134] LOG:  incomplete startup packet
+2023-12-02 13:13:53.374 +07 [379126] LOG:  received fast shutdown request
+2023-12-02 13:13:53.374 +07 [379126] LOG:  aborting any active transactions
+2023-12-02 13:13:53.375 +07 [379160] FATAL:  terminating connection due to administrator command
+2023-12-02 13:13:53.375 +07 [379159] FATAL:  terminating connection due to administrator command
+2023-12-02 13:13:53.375 +07 [379158] FATAL:  terminating connection due to administrator command
+2023-12-02 13:13:53.382 +07 [379126] LOG:  worker process: logical replication launcher (PID 379133) exited with exit code 1
+2023-12-02 13:13:53.382 +07 [379128] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:13:53.402 +07 [379126] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:15:35.505 +07 [380566] LOG:  listening on IPv4 address "127.0.0.1", port 46191
+2023-12-02 13:15:35.505 +07 [380566] LOG:  listening on Unix socket "/tmp/.s.PGSQL.46191"
+2023-12-02 13:15:35.516 +07 [380567] LOG:  database system was shut down at 2023-12-02 13:13:53 +07
+2023-12-02 13:15:35.518 +07 [380566] LOG:  database system is ready to accept connections
+2023-12-02 13:15:35.604 +07 [380574] LOG:  incomplete startup packet
+2023-12-02 13:16:44.757 +07 [380566] LOG:  received fast shutdown request
+2023-12-02 13:16:44.757 +07 [380566] LOG:  aborting any active transactions
+2023-12-02 13:16:44.758 +07 [380597] FATAL:  terminating connection due to administrator command
+2023-12-02 13:16:44.758 +07 [380599] FATAL:  terminating connection due to administrator command
+2023-12-02 13:16:44.758 +07 [380598] FATAL:  terminating connection due to administrator command
+2023-12-02 13:16:44.762 +07 [380566] LOG:  worker process: logical replication launcher (PID 380573) exited with exit code 1
+2023-12-02 13:16:44.765 +07 [380568] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:16:44.779 +07 [380566] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:16:50.172 +07 [381554] LOG:  listening on IPv4 address "127.0.0.1", port 38517
+2023-12-02 13:16:50.172 +07 [381554] LOG:  listening on Unix socket "/tmp/.s.PGSQL.38517"
+2023-12-02 13:16:50.183 +07 [381555] LOG:  database system was shut down at 2023-12-02 13:16:44 +07
+2023-12-02 13:16:50.185 +07 [381554] LOG:  database system is ready to accept connections
+2023-12-02 13:16:50.273 +07 [381565] LOG:  incomplete startup packet
+2023-12-02 13:17:35.648 +07 [381554] LOG:  received fast shutdown request
+2023-12-02 13:17:35.648 +07 [381554] LOG:  aborting any active transactions
+2023-12-02 13:17:35.648 +07 [381599] FATAL:  terminating connection due to administrator command
+2023-12-02 13:17:35.648 +07 [381600] FATAL:  terminating connection due to administrator command
+2023-12-02 13:17:35.648 +07 [381598] FATAL:  terminating connection due to administrator command
+2023-12-02 13:17:35.649 +07 [381554] LOG:  worker process: logical replication launcher (PID 381561) exited with exit code 1
+2023-12-02 13:17:35.651 +07 [381556] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:17:35.657 +07 [381554] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:18:00.785 +07 [382469] LOG:  listening on IPv4 address "127.0.0.1", port 44199
+2023-12-02 13:18:00.785 +07 [382469] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44199"
+2023-12-02 13:18:00.796 +07 [382470] LOG:  database system was shut down at 2023-12-02 13:17:35 +07
+2023-12-02 13:18:00.798 +07 [382469] LOG:  database system is ready to accept connections
+2023-12-02 13:18:00.886 +07 [382477] LOG:  incomplete startup packet
+2023-12-02 13:19:47.129 +07 [382469] LOG:  received fast shutdown request
+2023-12-02 13:19:47.129 +07 [382469] LOG:  aborting any active transactions
+2023-12-02 13:19:47.129 +07 [382502] FATAL:  terminating connection due to administrator command
+2023-12-02 13:19:47.130 +07 [382500] FATAL:  terminating connection due to administrator command
+2023-12-02 13:19:47.131 +07 [382501] FATAL:  terminating connection due to administrator command
+2023-12-02 13:19:47.131 +07 [382469] LOG:  worker process: logical replication launcher (PID 382476) exited with exit code 1
+2023-12-02 13:19:47.132 +07 [382471] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:19:47.141 +07 [382469] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:21:28.626 +07 [384905] LOG:  listening on IPv4 address "127.0.0.1", port 37547
+2023-12-02 13:21:28.626 +07 [384905] LOG:  listening on Unix socket "/tmp/.s.PGSQL.37547"
+2023-12-02 13:21:28.637 +07 [384906] LOG:  database system was shut down at 2023-12-02 13:19:47 +07
+2023-12-02 13:21:28.639 +07 [384905] LOG:  database system is ready to accept connections
+2023-12-02 13:21:28.727 +07 [384913] LOG:  incomplete startup packet
+2023-12-02 13:25:22.690 +07 [384905] LOG:  received fast shutdown request
+2023-12-02 13:25:22.691 +07 [384905] LOG:  aborting any active transactions
+2023-12-02 13:25:22.691 +07 [384935] FATAL:  terminating connection due to administrator command
+2023-12-02 13:25:22.691 +07 [384933] FATAL:  terminating connection due to administrator command
+2023-12-02 13:25:22.694 +07 [384905] LOG:  worker process: logical replication launcher (PID 384912) exited with exit code 1
+2023-12-02 13:25:22.695 +07 [384934] FATAL:  terminating connection due to administrator command
+2023-12-02 13:25:22.697 +07 [384907] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:25:22.702 +07 [384905] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:25:28.305 +07 [387662] LOG:  listening on IPv4 address "127.0.0.1", port 36323
+2023-12-02 13:25:28.305 +07 [387662] LOG:  listening on Unix socket "/tmp/.s.PGSQL.36323"
+2023-12-02 13:25:28.316 +07 [387663] LOG:  database system was shut down at 2023-12-02 13:25:22 +07
+2023-12-02 13:25:28.318 +07 [387662] LOG:  database system is ready to accept connections
+2023-12-02 13:25:28.404 +07 [387672] LOG:  incomplete startup packet
+2023-12-02 13:26:45.722 +07 [387662] LOG:  received fast shutdown request
+2023-12-02 13:26:45.723 +07 [387662] LOG:  aborting any active transactions
+2023-12-02 13:26:45.723 +07 [387692] FATAL:  terminating connection due to administrator command
+2023-12-02 13:26:45.723 +07 [387690] FATAL:  terminating connection due to administrator command
+2023-12-02 13:26:45.723 +07 [387691] FATAL:  terminating connection due to administrator command
+2023-12-02 13:26:45.724 +07 [387662] LOG:  worker process: logical replication launcher (PID 387669) exited with exit code 1
+waiting for server to shut down....2023-12-02 13:26:45.725 +07 [387664] LOG:  shutting down
+2023-12-02 13:26:45.731 +07 [387662] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:26:51.244 +07 [388696] LOG:  listening on IPv4 address "127.0.0.1", port 42879
+2023-12-02 13:26:51.244 +07 [388696] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42879"
+2023-12-02 13:26:51.255 +07 [388697] LOG:  database system was shut down at 2023-12-02 13:26:45 +07
+2023-12-02 13:26:51.257 +07 [388696] LOG:  database system is ready to accept connections
+2023-12-02 13:26:51.345 +07 [388704] LOG:  incomplete startup packet
+2023-12-02 13:32:15.145 +07 [388696] LOG:  received fast shutdown request
+2023-12-02 13:32:15.145 +07 [388696] LOG:  aborting any active transactions
+2023-12-02 13:32:15.145 +07 [388726] FATAL:  terminating connection due to administrator command
+2023-12-02 13:32:15.145 +07 [388724] FATAL:  terminating connection due to administrator command
+2023-12-02 13:32:15.146 +07 [388725] FATAL:  terminating connection due to administrator command
+2023-12-02 13:32:15.147 +07 [388696] LOG:  worker process: logical replication launcher (PID 388703) exited with exit code 1
+2023-12-02 13:32:15.147 +07 [388698] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:32:15.152 +07 [388696] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:32:21.028 +07 [392448] LOG:  listening on IPv4 address "127.0.0.1", port 42079
+2023-12-02 13:32:21.031 +07 [392448] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42079"
+2023-12-02 13:32:21.043 +07 [392449] LOG:  database system was shut down at 2023-12-02 13:32:15 +07
+2023-12-02 13:32:21.045 +07 [392448] LOG:  database system is ready to accept connections
+2023-12-02 13:32:21.121 +07 [392459] LOG:  incomplete startup packet
+2023-12-02 13:35:53.209 +07 [392448] LOG:  received fast shutdown request
+2023-12-02 13:35:53.209 +07 [392448] LOG:  aborting any active transactions
+2023-12-02 13:35:53.209 +07 [392482] FATAL:  terminating connection due to administrator command
+2023-12-02 13:35:53.209 +07 [392481] FATAL:  terminating connection due to administrator command
+2023-12-02 13:35:53.209 +07 [392480] FATAL:  terminating connection due to administrator command
+2023-12-02 13:35:53.213 +07 [392448] LOG:  worker process: logical replication launcher (PID 392455) exited with exit code 1
+2023-12-02 13:35:53.216 +07 [392450] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:35:53.239 +07 [392448] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:36:22.242 +07 [395366] LOG:  listening on IPv4 address "127.0.0.1", port 41067
+2023-12-02 13:36:22.242 +07 [395366] LOG:  listening on Unix socket "/tmp/.s.PGSQL.41067"
+2023-12-02 13:36:22.255 +07 [395367] LOG:  database system was shut down at 2023-12-02 13:35:53 +07
+2023-12-02 13:36:22.257 +07 [395366] LOG:  database system is ready to accept connections
+2023-12-02 13:36:22.343 +07 [395374] LOG:  incomplete startup packet
+2023-12-02 13:37:39.883 +07 [395366] LOG:  received fast shutdown request
+2023-12-02 13:37:39.883 +07 [395366] LOG:  aborting any active transactions
+2023-12-02 13:37:39.883 +07 [395396] FATAL:  terminating connection due to administrator command
+2023-12-02 13:37:39.883 +07 [395395] FATAL:  terminating connection due to administrator command
+2023-12-02 13:37:39.885 +07 [395394] FATAL:  terminating connection due to administrator command
+2023-12-02 13:37:39.887 +07 [395366] LOG:  worker process: logical replication launcher (PID 395373) exited with exit code 1
+2023-12-02 13:37:39.888 +07 [395368] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:37:39.894 +07 [395366] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:38:08.419 +07 [396786] LOG:  listening on IPv4 address "127.0.0.1", port 38949
+2023-12-02 13:38:08.419 +07 [396786] LOG:  listening on Unix socket "/tmp/.s.PGSQL.38949"
+2023-12-02 13:38:08.431 +07 [396787] LOG:  database system was shut down at 2023-12-02 13:37:39 +07
+2023-12-02 13:38:08.432 +07 [396786] LOG:  database system is ready to accept connections
+2023-12-02 13:38:08.520 +07 [396794] LOG:  incomplete startup packet
+2023-12-02 13:40:48.585 +07 [396786] LOG:  received fast shutdown request
+2023-12-02 13:40:48.585 +07 [396786] LOG:  aborting any active transactions
+2023-12-02 13:40:48.585 +07 [396819] FATAL:  terminating connection due to administrator command
+2023-12-02 13:40:48.585 +07 [396818] FATAL:  terminating connection due to administrator command
+2023-12-02 13:40:48.585 +07 [396817] FATAL:  terminating connection due to administrator command
+2023-12-02 13:40:48.590 +07 [396786] LOG:  worker process: logical replication launcher (PID 396793) exited with exit code 1
+2023-12-02 13:40:48.591 +07 [396788] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:40:48.596 +07 [396786] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:43:02.315 +07 [400058] LOG:  listening on IPv4 address "127.0.0.1", port 42397
+2023-12-02 13:43:02.315 +07 [400058] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42397"
+2023-12-02 13:43:02.326 +07 [400059] LOG:  database system was shut down at 2023-12-02 13:40:48 +07
+2023-12-02 13:43:02.328 +07 [400058] LOG:  database system is ready to accept connections
+2023-12-02 13:43:02.416 +07 [400066] LOG:  incomplete startup packet
+2023-12-02 13:43:16.241 +07 [400058] LOG:  received fast shutdown request
+2023-12-02 13:43:16.241 +07 [400058] LOG:  aborting any active transactions
+2023-12-02 13:43:16.241 +07 [400088] FATAL:  terminating connection due to administrator command
+2023-12-02 13:43:16.241 +07 [400086] FATAL:  terminating connection due to administrator command
+2023-12-02 13:43:16.242 +07 [400087] FATAL:  terminating connection due to administrator command
+2023-12-02 13:43:16.247 +07 [400058] LOG:  worker process: logical replication launcher (PID 400065) exited with exit code 1
+2023-12-02 13:43:16.247 +07 [400060] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:43:16.269 +07 [400058] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:43:27.353 +07 [400444] LOG:  listening on IPv4 address "127.0.0.1", port 44409
+2023-12-02 13:43:27.353 +07 [400444] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44409"
+2023-12-02 13:43:27.364 +07 [400445] LOG:  database system was shut down at 2023-12-02 13:43:16 +07
+2023-12-02 13:43:27.366 +07 [400444] LOG:  database system is ready to accept connections
+2023-12-02 13:43:27.452 +07 [400452] LOG:  incomplete startup packet
+2023-12-02 13:46:00.920 +07 [400444] LOG:  received fast shutdown request
+2023-12-02 13:46:00.920 +07 [400444] LOG:  aborting any active transactions
+2023-12-02 13:46:00.921 +07 [400472] FATAL:  terminating connection due to administrator command
+2023-12-02 13:46:00.921 +07 [400473] FATAL:  terminating connection due to administrator command
+2023-12-02 13:46:00.921 +07 [400471] FATAL:  terminating connection due to administrator command
+2023-12-02 13:46:00.926 +07 [400444] LOG:  worker process: logical replication launcher (PID 400451) exited with exit code 1
+2023-12-02 13:46:00.927 +07 [400446] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:46:00.932 +07 [400444] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:46:06.485 +07 [402299] LOG:  listening on IPv4 address "127.0.0.1", port 46425
+2023-12-02 13:46:06.485 +07 [402299] LOG:  listening on Unix socket "/tmp/.s.PGSQL.46425"
+2023-12-02 13:46:06.497 +07 [402300] LOG:  database system was shut down at 2023-12-02 13:46:00 +07
+2023-12-02 13:46:06.498 +07 [402299] LOG:  database system is ready to accept connections
+2023-12-02 13:46:06.586 +07 [402308] LOG:  incomplete startup packet
+2023-12-02 13:49:53.212 +07 [402299] LOG:  received fast shutdown request
+2023-12-02 13:49:53.212 +07 [402299] LOG:  aborting any active transactions
+2023-12-02 13:49:53.213 +07 [402330] FATAL:  terminating connection due to administrator command
+2023-12-02 13:49:53.213 +07 [402331] FATAL:  terminating connection due to administrator command
+2023-12-02 13:49:53.213 +07 [402329] FATAL:  terminating connection due to administrator command
+2023-12-02 13:49:53.217 +07 [402299] LOG:  worker process: logical replication launcher (PID 402306) exited with exit code 1
+2023-12-02 13:49:53.223 +07 [402301] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:49:53.240 +07 [402299] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:49:58.648 +07 [404922] LOG:  listening on IPv4 address "127.0.0.1", port 46041
+2023-12-02 13:49:58.648 +07 [404922] LOG:  listening on Unix socket "/tmp/.s.PGSQL.46041"
+2023-12-02 13:49:58.659 +07 [404923] LOG:  database system was shut down at 2023-12-02 13:49:53 +07
+2023-12-02 13:49:58.661 +07 [404922] LOG:  database system is ready to accept connections
+2023-12-02 13:49:58.749 +07 [404933] LOG:  incomplete startup packet
+2023-12-02 13:50:55.992 +07 [404922] LOG:  received fast shutdown request
+2023-12-02 13:50:55.993 +07 [404922] LOG:  aborting any active transactions
+2023-12-02 13:50:55.993 +07 [404955] FATAL:  terminating connection due to administrator command
+2023-12-02 13:50:55.993 +07 [404953] FATAL:  terminating connection due to administrator command
+2023-12-02 13:50:55.996 +07 [404954] FATAL:  terminating connection due to administrator command
+2023-12-02 13:50:55.997 +07 [404922] LOG:  worker process: logical replication launcher (PID 404930) exited with exit code 1
+2023-12-02 13:50:55.998 +07 [404924] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:50:56.003 +07 [404922] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:51:09.673 +07 [405764] LOG:  listening on IPv4 address "127.0.0.1", port 36765
+2023-12-02 13:51:09.673 +07 [405764] LOG:  listening on Unix socket "/tmp/.s.PGSQL.36765"
+2023-12-02 13:51:09.686 +07 [405767] LOG:  database system was shut down at 2023-12-02 13:50:55 +07
+2023-12-02 13:51:09.688 +07 [405764] LOG:  database system is ready to accept connections
+2023-12-02 13:51:09.774 +07 [405774] LOG:  incomplete startup packet
+2023-12-02 13:51:25.511 +07 [405764] LOG:  received fast shutdown request
+2023-12-02 13:51:25.511 +07 [405764] LOG:  aborting any active transactions
+2023-12-02 13:51:25.512 +07 [405798] FATAL:  terminating connection due to administrator command
+2023-12-02 13:51:25.512 +07 [405800] FATAL:  terminating connection due to administrator command
+2023-12-02 13:51:25.515 +07 [405764] LOG:  worker process: logical replication launcher (PID 405773) exited with exit code 1
+2023-12-02 13:51:25.517 +07 [405799] FATAL:  terminating connection due to administrator command
+2023-12-02 13:51:25.521 +07 [405768] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:51:25.544 +07 [405764] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:51:30.781 +07 [406100] LOG:  listening on IPv4 address "127.0.0.1", port 34711
+2023-12-02 13:51:30.781 +07 [406100] LOG:  listening on Unix socket "/tmp/.s.PGSQL.34711"
+2023-12-02 13:51:30.794 +07 [406103] LOG:  database system was shut down at 2023-12-02 13:51:25 +07
+2023-12-02 13:51:30.796 +07 [406100] LOG:  database system is ready to accept connections
+2023-12-02 13:51:30.882 +07 [406110] LOG:  incomplete startup packet
+2023-12-02 13:52:30.364 +07 [406100] LOG:  received fast shutdown request
+2023-12-02 13:52:30.364 +07 [406100] LOG:  aborting any active transactions
+2023-12-02 13:52:30.364 +07 [406134] FATAL:  terminating connection due to administrator command
+2023-12-02 13:52:30.364 +07 [406135] FATAL:  terminating connection due to administrator command
+2023-12-02 13:52:30.364 +07 [406133] FATAL:  terminating connection due to administrator command
+2023-12-02 13:52:30.369 +07 [406100] LOG:  worker process: logical replication launcher (PID 406109) exited with exit code 1
+2023-12-02 13:52:30.371 +07 [406104] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:52:30.393 +07 [406100] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:52:35.504 +07 [406894] LOG:  listening on IPv4 address "127.0.0.1", port 33231
+2023-12-02 13:52:35.504 +07 [406894] LOG:  listening on Unix socket "/tmp/.s.PGSQL.33231"
+2023-12-02 13:52:35.516 +07 [406895] LOG:  database system was shut down at 2023-12-02 13:52:30 +07
+2023-12-02 13:52:35.517 +07 [406894] LOG:  database system is ready to accept connections
+2023-12-02 13:52:35.605 +07 [406902] LOG:  incomplete startup packet
+2023-12-02 13:53:02.898 +07 [406894] LOG:  received fast shutdown request
+2023-12-02 13:53:02.898 +07 [406894] LOG:  aborting any active transactions
+2023-12-02 13:53:02.898 +07 [406930] FATAL:  terminating connection due to administrator command
+2023-12-02 13:53:02.898 +07 [406928] FATAL:  terminating connection due to administrator command
+2023-12-02 13:53:02.899 +07 [406929] FATAL:  terminating connection due to administrator command
+2023-12-02 13:53:02.903 +07 [406894] LOG:  worker process: logical replication launcher (PID 406901) exited with exit code 1
+2023-12-02 13:53:02.904 +07 [406896] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:53:02.909 +07 [406894] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:53:14.086 +07 [407445] LOG:  listening on IPv4 address "127.0.0.1", port 34877
+2023-12-02 13:53:14.086 +07 [407445] LOG:  listening on Unix socket "/tmp/.s.PGSQL.34877"
+2023-12-02 13:53:14.097 +07 [407446] LOG:  database system was shut down at 2023-12-02 13:53:02 +07
+2023-12-02 13:53:14.099 +07 [407445] LOG:  database system is ready to accept connections
+2023-12-02 13:53:14.187 +07 [407453] LOG:  incomplete startup packet
+2023-12-02 13:58:11.546 +07 [407445] LOG:  received fast shutdown request
+2023-12-02 13:58:11.546 +07 [407445] LOG:  aborting any active transactions
+2023-12-02 13:58:11.546 +07 [407480] FATAL:  terminating connection due to administrator command
+2023-12-02 13:58:11.546 +07 [407478] FATAL:  terminating connection due to administrator command
+2023-12-02 13:58:11.547 +07 [407479] FATAL:  terminating connection due to administrator command
+2023-12-02 13:58:11.551 +07 [407445] LOG:  worker process: logical replication launcher (PID 407452) exited with exit code 1
+2023-12-02 13:58:11.552 +07 [407447] LOG:  shutting down
+waiting for server to shut down....2023-12-02 13:58:11.574 +07 [407445] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 13:58:16.736 +07 [410984] LOG:  listening on IPv4 address "127.0.0.1", port 36913
+2023-12-02 13:58:16.736 +07 [410984] LOG:  listening on Unix socket "/tmp/.s.PGSQL.36913"
+2023-12-02 13:58:16.747 +07 [410985] LOG:  database system was shut down at 2023-12-02 13:58:11 +07
+2023-12-02 13:58:16.749 +07 [410984] LOG:  database system is ready to accept connections
+2023-12-02 13:58:16.837 +07 [410992] LOG:  incomplete startup packet
+2023-12-02 14:09:57.501 +07 [410984] LOG:  received fast shutdown request
+2023-12-02 14:09:57.501 +07 [410984] LOG:  aborting any active transactions
+2023-12-02 14:09:57.501 +07 [411018] FATAL:  terminating connection due to administrator command
+2023-12-02 14:09:57.501 +07 [411016] FATAL:  terminating connection due to administrator command
+2023-12-02 14:09:57.501 +07 [411017] FATAL:  terminating connection due to administrator command
+2023-12-02 14:09:57.505 +07 [410984] LOG:  worker process: logical replication launcher (PID 410991) exited with exit code 1
+2023-12-02 14:09:57.508 +07 [410986] LOG:  shutting down
+waiting for server to shut down....2023-12-02 14:09:57.529 +07 [410984] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 14:14:00.230 +07 [421674] LOG:  listening on IPv4 address "127.0.0.1", port 37705
+2023-12-02 14:14:00.230 +07 [421674] LOG:  listening on Unix socket "/tmp/.s.PGSQL.37705"
+2023-12-02 14:14:00.241 +07 [421675] LOG:  database system was shut down at 2023-12-02 14:09:57 +07
+2023-12-02 14:14:00.243 +07 [421674] LOG:  database system is ready to accept connections
+2023-12-02 14:14:00.330 +07 [421685] LOG:  incomplete startup packet
+2023-12-02 14:15:10.513 +07 [421674] LOG:  received fast shutdown request
+2023-12-02 14:15:10.513 +07 [421674] LOG:  aborting any active transactions
+2023-12-02 14:15:10.513 +07 [421713] FATAL:  terminating connection due to administrator command
+2023-12-02 14:15:10.513 +07 [421714] FATAL:  terminating connection due to administrator command
+2023-12-02 14:15:10.513 +07 [421712] FATAL:  terminating connection due to administrator command
+2023-12-02 14:15:10.514 +07 [421674] LOG:  worker process: logical replication launcher (PID 421681) exited with exit code 1
+2023-12-02 14:15:10.515 +07 [421676] LOG:  shutting down
+waiting for server to shut down....2023-12-02 14:15:10.521 +07 [421674] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 14:16:12.437 +07 [423246] LOG:  listening on IPv4 address "127.0.0.1", port 46739
+2023-12-02 14:16:12.437 +07 [423246] LOG:  listening on Unix socket "/tmp/.s.PGSQL.46739"
+2023-12-02 14:16:12.449 +07 [423247] LOG:  database system was shut down at 2023-12-02 14:15:10 +07
+2023-12-02 14:16:12.450 +07 [423246] LOG:  database system is ready to accept connections
+2023-12-02 14:16:12.539 +07 [423254] LOG:  incomplete startup packet
+2023-12-02 14:16:37.904 +07 [423246] LOG:  received fast shutdown request
+2023-12-02 14:16:37.904 +07 [423246] LOG:  aborting any active transactions
+2023-12-02 14:16:37.904 +07 [423276] FATAL:  terminating connection due to administrator command
+2023-12-02 14:16:37.904 +07 [423275] FATAL:  terminating connection due to administrator command
+2023-12-02 14:16:37.904 +07 [423274] FATAL:  terminating connection due to administrator command
+2023-12-02 14:16:37.908 +07 [423246] LOG:  worker process: logical replication launcher (PID 423253) exited with exit code 1
+waiting for server to shut down....2023-12-02 14:16:37.916 +07 [423248] LOG:  shutting down
+2023-12-02 14:16:37.938 +07 [423246] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 14:16:47.446 +07 [423713] LOG:  listening on IPv4 address "127.0.0.1", port 42379
+2023-12-02 14:16:47.446 +07 [423713] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42379"
+2023-12-02 14:16:47.457 +07 [423714] LOG:  database system was shut down at 2023-12-02 14:16:37 +07
+2023-12-02 14:16:47.459 +07 [423713] LOG:  database system is ready to accept connections
+2023-12-02 14:16:47.547 +07 [423721] LOG:  incomplete startup packet
+2023-12-02 14:18:49.006 +07 [423713] LOG:  received fast shutdown request
+2023-12-02 14:18:49.006 +07 [423713] LOG:  aborting any active transactions
+2023-12-02 14:18:49.006 +07 [423743] FATAL:  terminating connection due to administrator command
+waiting for server to shut down....2023-12-02 14:18:49.009 +07 [423742] FATAL:  terminating connection due to administrator command
+2023-12-02 14:18:49.010 +07 [423744] FATAL:  terminating connection due to administrator command
+2023-12-02 14:18:49.011 +07 [423713] LOG:  worker process: logical replication launcher (PID 423720) exited with exit code 1
+2023-12-02 14:18:49.011 +07 [423715] LOG:  shutting down
+2023-12-02 14:18:49.018 +07 [423713] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 14:19:00.468 +07 [425699] LOG:  listening on IPv4 address "127.0.0.1", port 35767
+2023-12-02 14:19:00.468 +07 [425699] LOG:  listening on Unix socket "/tmp/.s.PGSQL.35767"
+2023-12-02 14:19:00.479 +07 [425700] LOG:  database system was shut down at 2023-12-02 14:18:49 +07
+2023-12-02 14:19:00.481 +07 [425699] LOG:  database system is ready to accept connections
+2023-12-02 14:19:00.569 +07 [425707] LOG:  incomplete startup packet
+2023-12-02 14:42:09.319 +07 [425699] LOG:  received fast shutdown request
+2023-12-02 14:42:09.319 +07 [425699] LOG:  aborting any active transactions
+2023-12-02 14:42:09.320 +07 [425730] FATAL:  terminating connection due to administrator command
+2023-12-02 14:42:09.320 +07 [425731] FATAL:  terminating connection due to administrator command
+2023-12-02 14:42:09.320 +07 [425732] FATAL:  terminating connection due to administrator command
+2023-12-02 14:42:09.324 +07 [425699] LOG:  worker process: logical replication launcher (PID 425706) exited with exit code 1
+2023-12-02 14:42:09.328 +07 [425701] LOG:  shutting down
+waiting for server to shut down....2023-12-02 14:42:09.344 +07 [425699] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 14:42:17.833 +07 [440994] LOG:  listening on IPv4 address "127.0.0.1", port 41413
+2023-12-02 14:42:17.833 +07 [440994] LOG:  listening on Unix socket "/tmp/.s.PGSQL.41413"
+2023-12-02 14:42:17.844 +07 [440995] LOG:  database system was shut down at 2023-12-02 14:42:09 +07
+2023-12-02 14:42:17.846 +07 [440994] LOG:  database system is ready to accept connections
+2023-12-02 14:42:17.934 +07 [441002] LOG:  incomplete startup packet
+2023-12-02 15:05:13.044 +07 [440994] LOG:  received fast shutdown request
+2023-12-02 15:05:13.045 +07 [440994] LOG:  aborting any active transactions
+2023-12-02 15:05:13.045 +07 [441024] FATAL:  terminating connection due to administrator command
+2023-12-02 15:05:13.045 +07 [441023] FATAL:  terminating connection due to administrator command
+2023-12-02 15:05:13.045 +07 [441022] FATAL:  terminating connection due to administrator command
+2023-12-02 15:05:13.050 +07 [440994] LOG:  worker process: logical replication launcher (PID 441001) exited with exit code 1
+2023-12-02 15:05:13.051 +07 [440996] LOG:  shutting down
+waiting for server to shut down....2023-12-02 15:05:13.056 +07 [440994] LOG:  database system is shut down
+ done
+server stopped
+2023-12-02 15:05:19.752 +07 [456240] LOG:  listening on IPv4 address "127.0.0.1", port 33941
+2023-12-02 15:05:19.752 +07 [456240] LOG:  listening on Unix socket "/tmp/.s.PGSQL.33941"
+2023-12-02 15:05:19.764 +07 [456241] LOG:  database system was shut down at 2023-12-02 15:05:13 +07
+2023-12-02 15:05:19.766 +07 [456240] LOG:  database system is ready to accept connections
+2023-12-02 15:05:19.850 +07 [456249] LOG:  incomplete startup packet
+2023-12-03 19:51:30.547 +07 [456240] LOG:  received fast shutdown request
+waiting for server to shut down...2023-12-03 19:51:30.560 +07 [456240] LOG:  aborting any active transactions
+.2023-12-03 19:51:30.560 +07 [1496719] FATAL:  terminating connection due to administrator command
+2023-12-03 19:51:30.560 +07 [1496721] FATAL:  terminating connection due to administrator command
+2023-12-03 19:51:30.560 +07 [1496720] FATAL:  terminating connection due to administrator command
+2023-12-03 19:51:30.562 +07 [456240] LOG:  worker process: logical replication launcher (PID 456247) exited with exit code 1
+2023-12-03 19:51:30.562 +07 [456242] LOG:  shutting down
+2023-12-03 19:51:30.567 +07 [456240] LOG:  database system is shut down
+ done
+server stopped
+2023-12-03 19:51:50.344 +07 [1524534] LOG:  listening on IPv4 address "127.0.0.1", port 43371
+2023-12-03 19:51:50.344 +07 [1524534] LOG:  listening on Unix socket "/tmp/.s.PGSQL.43371"
+2023-12-03 19:51:50.358 +07 [1524537] LOG:  database system was shut down at 2023-12-03 19:51:30 +07
+2023-12-03 19:51:50.360 +07 [1524534] LOG:  database system is ready to accept connections
+2023-12-03 19:51:50.445 +07 [1524544] LOG:  incomplete startup packet
+2023-12-03 23:36:33.225 +07 [1524534] LOG:  received SIGHUP, reloading configuration files
+2023-12-03 23:36:33.227 +07 [1524534] LOG:  parameter "max_connections" cannot be changed without restarting the server
+2023-12-03 23:36:33.227 +07 [1524534] LOG:  configuration file "/media/tss2tss/7e5347d8-06dd-4a18-b4c6-a7309160969b/ai/DML/anvil/dml2/dml/.anvil-data/db/postgresql.conf" contains errors; unaffected changes were applied
+waiting for server to shut down...2023-12-03 23:36:33.243 +07 [1524534] LOG:  received fast shutdown request
+.2023-12-03 23:36:33.243 +07 [1524534] LOG:  aborting any active transactions
+2023-12-03 23:36:33.243 +07 [1619230] FATAL:  terminating connection due to administrator command
+2023-12-03 23:36:33.243 +07 [1619229] FATAL:  terminating connection due to administrator command
+2023-12-03 23:36:33.243 +07 [1619228] FATAL:  terminating connection due to administrator command
+2023-12-03 23:36:33.250 +07 [1524534] LOG:  worker process: logical replication launcher (PID 1524543) exited with exit code 1
+2023-12-03 23:36:33.251 +07 [1524538] LOG:  shutting down
+2023-12-03 23:36:33.264 +07 [1524534] LOG:  database system is shut down
+ done
+server stopped
+2023-12-03 23:57:33.821 +07 [1655520] LOG:  listening on IPv4 address "127.0.0.1", port 44081
+2023-12-03 23:57:33.821 +07 [1655520] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44081"
+2023-12-03 23:57:33.833 +07 [1655521] LOG:  database system was shut down at 2023-12-03 23:36:33 +07
+2023-12-03 23:57:33.834 +07 [1655520] LOG:  database system is ready to accept connections
+2023-12-03 23:57:33.922 +07 [1655528] LOG:  incomplete startup packet
+2023-12-04 00:06:24.235 +07 [1655520] LOG:  received fast shutdown request
+2023-12-04 00:06:24.235 +07 [1655520] LOG:  aborting any active transactions
+2023-12-04 00:06:24.235 +07 [1655550] FATAL:  terminating connection due to administrator command
+2023-12-04 00:06:24.236 +07 [1655549] FATAL:  terminating connection due to administrator command
+2023-12-04 00:06:24.238 +07 [1655520] LOG:  worker process: logical replication launcher (PID 1655527) exited with exit code 1
+2023-12-04 00:06:24.239 +07 [1655548] FATAL:  terminating connection due to administrator command
+2023-12-04 00:06:24.243 +07 [1655522] LOG:  shutting down
+waiting for server to shut down....2023-12-04 00:06:24.264 +07 [1655520] LOG:  database system is shut down
+ done
+server stopped
+2023-12-04 00:06:30.245 +07 [1660878] LOG:  listening on IPv4 address "127.0.0.1", port 43827
+2023-12-04 00:06:30.245 +07 [1660878] LOG:  listening on Unix socket "/tmp/.s.PGSQL.43827"
+2023-12-04 00:06:30.257 +07 [1660879] LOG:  database system was shut down at 2023-12-04 00:06:24 +07
+2023-12-04 00:06:30.258 +07 [1660878] LOG:  database system is ready to accept connections
+2023-12-04 00:06:30.350 +07 [1660886] LOG:  incomplete startup packet
+2023-12-04 00:35:02.901 +07 [1660878] LOG:  received fast shutdown request
+2023-12-04 00:35:02.901 +07 [1660878] LOG:  aborting any active transactions
+2023-12-04 00:35:02.901 +07 [1660909] FATAL:  terminating connection due to administrator command
+2023-12-04 00:35:02.901 +07 [1660911] FATAL:  terminating connection due to administrator command
+2023-12-04 00:35:02.901 +07 [1660910] FATAL:  terminating connection due to administrator command
+2023-12-04 00:35:02.906 +07 [1660878] LOG:  worker process: logical replication launcher (PID 1660885) exited with exit code 1
+2023-12-04 00:35:02.908 +07 [1660880] LOG:  shutting down
+waiting for server to shut down....2023-12-04 00:35:02.928 +07 [1660878] LOG:  database system is shut down
+ done
+server stopped
+2023-12-04 00:35:08.334 +07 [1678041] LOG:  listening on IPv4 address "127.0.0.1", port 32825
+2023-12-04 00:35:08.334 +07 [1678041] LOG:  listening on Unix socket "/tmp/.s.PGSQL.32825"
+2023-12-04 00:35:08.345 +07 [1678042] LOG:  database system was shut down at 2023-12-04 00:35:02 +07
+2023-12-04 00:35:08.347 +07 [1678041] LOG:  database system is ready to accept connections
+2023-12-04 00:35:08.433 +07 [1678052] LOG:  incomplete startup packet
+pg_ctl: could not send stop signal (PID: 1678041): No such process
+2023-12-06 10:48:06.914 +07 [1731987] LOG:  listening on IPv4 address "127.0.0.1", port 35371
+2023-12-06 10:48:06.915 +07 [1731987] LOG:  listening on Unix socket "/tmp/.s.PGSQL.35371"
+2023-12-06 10:48:06.943 +07 [1731997] LOG:  database system was interrupted; last known up at 2023-12-04 12:10:24 +07
+2023-12-06 10:48:06.978 +07 [1731997] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-12-06 10:48:06.981 +07 [1731997] LOG:  redo starts at 0/2098528
+2023-12-06 10:48:06.982 +07 [1731997] LOG:  invalid record length at 0/2099F58: wanted 24, got 0
+2023-12-06 10:48:06.982 +07 [1731997] LOG:  redo done at 0/2099F20
+2023-12-06 10:48:06.982 +07 [1731997] LOG:  last completed transaction was at log time 2023-12-04 05:10:26.01148+00
+2023-12-06 10:48:06.995 +07 [1731998] LOG:  incomplete startup packet
+2023-12-06 10:48:06.998 +07 [1731987] LOG:  database system is ready to accept connections
+2023-12-07 10:52:12.037 +07 [1731987] LOG:  received fast shutdown request
+2023-12-07 10:52:12.071 +07 [1731987] LOG:  aborting any active transactions
+2023-12-07 10:52:12.135 +07 [2639393] FATAL:  terminating connection due to administrator command
+2023-12-07 10:52:12.135 +07 [2639395] FATAL:  terminating connection due to administrator command
+2023-12-07 10:52:12.135 +07 [2639394] FATAL:  terminating connection due to administrator command
+2023-12-07 10:52:12.141 +07 [1731987] LOG:  worker process: logical replication launcher (PID 1732004) exited with exit code 1
+2023-12-07 10:52:12.142 +07 [1731999] LOG:  shutting down
+2023-12-07 10:52:12.220 +07 [1731987] LOG:  database system is shut down
+2023-12-07 10:52:23.649 +07 [2642153] LOG:  listening on IPv4 address "127.0.0.1", port 34125
+2023-12-07 10:52:23.649 +07 [2642153] LOG:  listening on Unix socket "/tmp/.s.PGSQL.34125"
+2023-12-07 10:52:23.701 +07 [2642161] LOG:  database system was shut down at 2023-12-07 10:52:12 +07
+2023-12-07 10:52:23.718 +07 [2642153] LOG:  database system is ready to accept connections
+2023-12-07 10:52:23.725 +07 [2642168] LOG:  incomplete startup packet
+2023-12-07 10:54:09.937 +07 [2642153] LOG:  received fast shutdown request
+2023-12-07 10:54:09.937 +07 [2642153] LOG:  aborting any active transactions
+2023-12-07 10:54:09.937 +07 [2642198] FATAL:  terminating connection due to administrator command
+2023-12-07 10:54:09.937 +07 [2642196] FATAL:  terminating connection due to administrator command
+2023-12-07 10:54:09.937 +07 [2642197] FATAL:  terminating connection due to administrator command
+2023-12-07 10:54:09.938 +07 [2642153] LOG:  worker process: logical replication launcher (PID 2642167) exited with exit code 1
+2023-12-07 10:54:09.939 +07 [2642162] LOG:  shutting down
+waiting for server to shut down....2023-12-07 10:54:09.945 +07 [2642153] LOG:  database system is shut down
+ done
+server stopped
+2023-12-07 10:54:16.563 +07 [2643579] LOG:  listening on IPv4 address "127.0.0.1", port 38981
+2023-12-07 10:54:16.563 +07 [2643579] LOG:  listening on Unix socket "/tmp/.s.PGSQL.38981"
+2023-12-07 10:54:16.574 +07 [2643580] LOG:  database system was shut down at 2023-12-07 10:54:09 +07
+2023-12-07 10:54:16.576 +07 [2643579] LOG:  database system is ready to accept connections
+2023-12-07 10:54:16.664 +07 [2643588] LOG:  incomplete startup packet
+2023-12-07 10:54:44.434 +07 [2643579] LOG:  received fast shutdown request
+2023-12-07 10:54:44.434 +07 [2643579] LOG:  aborting any active transactions
+2023-12-07 10:54:44.434 +07 [2643610] FATAL:  terminating connection due to administrator command
+2023-12-07 10:54:44.434 +07 [2643612] FATAL:  terminating connection due to administrator command
+2023-12-07 10:54:44.435 +07 [2643611] FATAL:  terminating connection due to administrator command
+2023-12-07 10:54:44.439 +07 [2643579] LOG:  worker process: logical replication launcher (PID 2643586) exited with exit code 1
+2023-12-07 10:54:44.441 +07 [2643581] LOG:  shutting down
+waiting for server to shut down....2023-12-07 10:54:44.453 +07 [2643579] LOG:  database system is shut down
+ done
+server stopped
+2023-12-07 10:54:53.658 +07 [2644069] LOG:  listening on IPv4 address "127.0.0.1", port 40639
+2023-12-07 10:54:53.658 +07 [2644069] LOG:  listening on Unix socket "/tmp/.s.PGSQL.40639"
+2023-12-07 10:54:53.669 +07 [2644070] LOG:  database system was shut down at 2023-12-07 10:54:44 +07
+2023-12-07 10:54:53.671 +07 [2644069] LOG:  database system is ready to accept connections
+2023-12-07 10:54:53.759 +07 [2644078] LOG:  incomplete startup packet
+2023-12-07 11:00:11.370 +07 [2644069] LOG:  received fast shutdown request
+2023-12-07 11:00:11.371 +07 [2644069] LOG:  aborting any active transactions
+2023-12-07 11:00:11.371 +07 [2644107] FATAL:  terminating connection due to administrator command
+2023-12-07 11:00:11.371 +07 [2644106] FATAL:  terminating connection due to administrator command
+2023-12-07 11:00:11.372 +07 [2644105] FATAL:  terminating connection due to administrator command
+2023-12-07 11:00:11.375 +07 [2644069] LOG:  worker process: logical replication launcher (PID 2644076) exited with exit code 1
+2023-12-07 11:00:11.377 +07 [2644071] LOG:  shutting down
+waiting for server to shut down....2023-12-07 11:00:11.399 +07 [2644069] LOG:  database system is shut down
+ done
+server stopped
+2023-12-07 11:00:19.062 +07 [2647646] LOG:  listening on IPv4 address "127.0.0.1", port 45127
+2023-12-07 11:00:19.062 +07 [2647646] LOG:  listening on Unix socket "/tmp/.s.PGSQL.45127"
+2023-12-07 11:00:19.074 +07 [2647647] LOG:  database system was shut down at 2023-12-07 11:00:11 +07
+2023-12-07 11:00:19.076 +07 [2647646] LOG:  database system is ready to accept connections
+2023-12-07 11:00:19.164 +07 [2647655] LOG:  incomplete startup packet
+2023-12-07 11:05:56.642 +07 [2647646] LOG:  received fast shutdown request
+2023-12-07 11:05:56.642 +07 [2647646] LOG:  aborting any active transactions
+2023-12-07 11:05:56.642 +07 [2647678] FATAL:  terminating connection due to administrator command
+2023-12-07 11:05:56.642 +07 [2647677] FATAL:  terminating connection due to administrator command
+2023-12-07 11:05:56.646 +07 [2647676] FATAL:  terminating connection due to administrator command
+2023-12-07 11:05:56.652 +07 [2647646] LOG:  worker process: logical replication launcher (PID 2647653) exited with exit code 1
+2023-12-07 11:05:56.653 +07 [2647648] LOG:  shutting down
+waiting for server to shut down....2023-12-07 11:05:56.665 +07 [2647646] LOG:  database system is shut down
+ done
+server stopped
+2023-12-07 11:06:02.455 +07 [2651840] LOG:  listening on IPv4 address "127.0.0.1", port 45171
+2023-12-07 11:06:02.455 +07 [2651840] LOG:  listening on Unix socket "/tmp/.s.PGSQL.45171"
+2023-12-07 11:06:02.466 +07 [2651841] LOG:  database system was shut down at 2023-12-07 11:05:56 +07
+2023-12-07 11:06:02.468 +07 [2651840] LOG:  database system is ready to accept connections
+2023-12-07 11:06:02.556 +07 [2651848] LOG:  incomplete startup packet
+2023-12-07 11:23:01.766 +07 [2651840] LOG:  received fast shutdown request
+2023-12-07 11:23:01.783 +07 [2651840] LOG:  aborting any active transactions
+2023-12-07 11:23:01.783 +07 [2651870] FATAL:  terminating connection due to administrator command
+2023-12-07 11:23:01.783 +07 [2651868] FATAL:  terminating connection due to administrator command
+2023-12-07 11:23:01.786 +07 [2651869] FATAL:  terminating connection due to administrator command
+2023-12-07 11:23:01.786 +07 [2651840] LOG:  worker process: logical replication launcher (PID 2651847) exited with exit code 1
+2023-12-07 11:23:01.791 +07 [2651842] LOG:  shutting down
+waiting for server to shut down....2023-12-07 11:23:01.813 +07 [2651840] LOG:  database system is shut down
+ done
+server stopped
+2023-12-07 11:23:09.140 +07 [2662864] LOG:  listening on IPv4 address "127.0.0.1", port 40073
+2023-12-07 11:23:09.140 +07 [2662864] LOG:  listening on Unix socket "/tmp/.s.PGSQL.40073"
+2023-12-07 11:23:09.168 +07 [2662879] LOG:  database system was shut down at 2023-12-07 11:23:01 +07
+2023-12-07 11:23:09.172 +07 [2662864] LOG:  database system is ready to accept connections
+2023-12-07 11:23:09.228 +07 [2662886] LOG:  incomplete startup packet
+2023-12-07 11:26:45.058 +07 [2662864] LOG:  received fast shutdown request
+2023-12-07 11:26:45.059 +07 [2662864] LOG:  aborting any active transactions
+2023-12-07 11:26:45.059 +07 [2662914] FATAL:  terminating connection due to administrator command
+2023-12-07 11:26:45.059 +07 [2662913] FATAL:  terminating connection due to administrator command
+2023-12-07 11:26:45.059 +07 [2662915] FATAL:  terminating connection due to administrator command
+2023-12-07 11:26:45.068 +07 [2662864] LOG:  worker process: logical replication launcher (PID 2662885) exited with exit code 1
+waiting for server to shut down....2023-12-07 11:26:45.071 +07 [2662880] LOG:  shutting down
+2023-12-07 11:26:45.093 +07 [2662864] LOG:  database system is shut down
+ done
+server stopped
+2023-12-07 11:26:50.832 +07 [2665487] LOG:  listening on IPv4 address "127.0.0.1", port 44431
+2023-12-07 11:26:50.832 +07 [2665487] LOG:  listening on Unix socket "/tmp/.s.PGSQL.44431"
+2023-12-07 11:26:50.843 +07 [2665488] LOG:  database system was shut down at 2023-12-07 11:26:45 +07
+2023-12-07 11:26:50.845 +07 [2665487] LOG:  database system is ready to accept connections
+2023-12-07 11:26:50.933 +07 [2665495] LOG:  incomplete startup packet
+2023-12-07 11:29:17.103 +07 [2665487] LOG:  received fast shutdown request
+2023-12-07 11:29:17.103 +07 [2665487] LOG:  aborting any active transactions
+2023-12-07 11:29:17.103 +07 [2665517] FATAL:  terminating connection due to administrator command
+2023-12-07 11:29:17.103 +07 [2665516] FATAL:  terminating connection due to administrator command
+2023-12-07 11:29:17.103 +07 [2665518] FATAL:  terminating connection due to administrator command
+2023-12-07 11:29:17.104 +07 [2665487] LOG:  worker process: logical replication launcher (PID 2665494) exited with exit code 1
+2023-12-07 11:29:17.106 +07 [2665489] LOG:  shutting down
+waiting for server to shut down....2023-12-07 11:29:17.112 +07 [2665487] LOG:  database system is shut down
+ done
+server stopped
+2023-12-07 11:29:22.693 +07 [2667423] LOG:  listening on IPv4 address "127.0.0.1", port 42793
+2023-12-07 11:29:22.693 +07 [2667423] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42793"
+2023-12-07 11:29:22.704 +07 [2667425] LOG:  database system was shut down at 2023-12-07 11:29:17 +07
+2023-12-07 11:29:22.706 +07 [2667423] LOG:  database system is ready to accept connections
+2023-12-07 11:29:22.793 +07 [2667434] LOG:  incomplete startup packet
+2023-12-07 15:09:41.404 +07 [2667423] LOG:  received fast shutdown request
+waiting for server to shut down...2023-12-07 15:09:41.418 +07 [2667423] LOG:  aborting any active transactions
+.2023-12-07 15:09:41.418 +07 [2771702] FATAL:  terminating connection due to administrator command
+2023-12-07 15:09:41.418 +07 [2771701] FATAL:  terminating connection due to administrator command
+2023-12-07 15:09:41.418 +07 [2771700] FATAL:  terminating connection due to administrator command
+2023-12-07 15:09:41.420 +07 [2667423] LOG:  worker process: logical replication launcher (PID 2667431) exited with exit code 1
+2023-12-07 15:09:41.421 +07 [2667426] LOG:  shutting down
+2023-12-07 15:09:41.430 +07 [2667423] LOG:  database system is shut down
+ done
+server stopped
+2023-12-07 15:09:48.752 +07 [2794065] LOG:  listening on IPv4 address "127.0.0.1", port 35655
+2023-12-07 15:09:48.752 +07 [2794065] LOG:  listening on Unix socket "/tmp/.s.PGSQL.35655"
+2023-12-07 15:09:48.764 +07 [2794066] LOG:  database system was shut down at 2023-12-07 15:09:41 +07
+2023-12-07 15:09:48.765 +07 [2794065] LOG:  database system is ready to accept connections
+2023-12-07 15:09:48.854 +07 [2794076] LOG:  incomplete startup packet
+2023-12-20 10:36:49.464 +07 [2794065] LOG:  received SIGHUP, reloading configuration files
+waiting for server to shut down....2023-12-20 10:36:49.606 +07 [2794065] LOG:  parameter "max_connections" cannot be changed without restarting the server
+2023-12-20 10:36:49.607 +07 [2794065] LOG:  configuration file "/media/tss2tss/7e5347d8-06dd-4a18-b4c6-a7309160969b/ai/DML/anvil/dml2/dml/.anvil-data/db/postgresql.conf" contains errors; unaffected changes were applied
+2023-12-20 10:36:49.637 +07 [2794065] LOG:  received fast shutdown request
+2023-12-20 10:36:49.637 +07 [2794065] LOG:  aborting any active transactions
+2023-12-20 10:36:49.652 +07 [889211] FATAL:  terminating connection due to administrator command
+2023-12-20 10:36:49.653 +07 [889210] FATAL:  terminating connection due to administrator command
+2023-12-20 10:36:49.654 +07 [889212] FATAL:  terminating connection due to administrator command
+2023-12-20 10:36:49.660 +07 [2794065] LOG:  worker process: logical replication launcher (PID 2794073) exited with exit code 1
+2023-12-20 10:36:49.661 +07 [2794068] LOG:  shutting down
+2023-12-20 10:36:49.695 +07 [2794065] LOG:  database system is shut down
+ done
+server stopped
+2023-12-21 17:40:30.844 +07 [1056860] LOG:  listening on IPv4 address "127.0.0.1", port 43009
+2023-12-21 17:40:30.863 +07 [1056860] LOG:  listening on Unix socket "/tmp/.s.PGSQL.43009"
+2023-12-21 17:40:30.899 +07 [1056864] LOG:  database system was shut down at 2023-12-20 10:36:49 +07
+2023-12-21 17:40:30.926 +07 [1056865] LOG:  incomplete startup packet
+2023-12-21 17:40:30.943 +07 [1056860] LOG:  database system is ready to accept connections
+2023-12-25 15:26:42.305 +07 [1056860] LOG:  received fast shutdown request
+2023-12-25 15:26:42.321 +07 [1056860] LOG:  aborting any active transactions
+2023-12-25 15:26:42.339 +07 [4112336] FATAL:  terminating connection due to administrator command
+2023-12-25 15:26:42.339 +07 [4112335] FATAL:  terminating connection due to administrator command
+2023-12-25 15:26:42.339 +07 [4112337] FATAL:  terminating connection due to administrator command
+2023-12-25 15:26:42.342 +07 [1056860] LOG:  worker process: logical replication launcher (PID 1056871) exited with exit code 1
+2023-12-25 15:26:42.344 +07 [1056866] LOG:  shutting down
+2023-12-25 15:26:42.367 +07 [1056860] LOG:  database system is shut down
+2023-12-25 15:26:50.734 +07 [4138744] LOG:  listening on IPv4 address "127.0.0.1", port 40705
+2023-12-25 15:26:50.735 +07 [4138744] LOG:  listening on Unix socket "/tmp/.s.PGSQL.40705"
+2023-12-25 15:26:50.779 +07 [4138748] LOG:  database system was shut down at 2023-12-25 15:26:42 +07
+2023-12-25 15:26:50.801 +07 [4138744] LOG:  database system is ready to accept connections
+2023-12-25 15:26:50.807 +07 [4138755] LOG:  incomplete startup packet
+2023-12-25 15:28:16.447 +07 [4138744] LOG:  received fast shutdown request
+2023-12-25 15:28:16.447 +07 [4138744] LOG:  aborting any active transactions
+2023-12-25 15:28:16.448 +07 [4138777] FATAL:  terminating connection due to administrator command
+2023-12-25 15:28:16.448 +07 [4138776] FATAL:  terminating connection due to administrator command
+2023-12-25 15:28:16.448 +07 [4138775] FATAL:  terminating connection due to administrator command
+2023-12-25 15:28:16.452 +07 [4138744] LOG:  worker process: logical replication launcher (PID 4138754) exited with exit code 1
+2023-12-25 15:28:16.453 +07 [4138749] LOG:  shutting down
+waiting for server to shut down....2023-12-25 15:28:16.458 +07 [4138744] LOG:  database system is shut down
+ done
+server stopped
+2023-12-25 15:28:25.169 +07 [4139750] LOG:  listening on IPv4 address "127.0.0.1", port 39071
+2023-12-25 15:28:25.169 +07 [4139750] LOG:  listening on Unix socket "/tmp/.s.PGSQL.39071"
+2023-12-25 15:28:25.181 +07 [4139751] LOG:  database system was shut down at 2023-12-25 15:28:16 +07
+2023-12-25 15:28:25.183 +07 [4139750] LOG:  database system is ready to accept connections
+2023-12-25 15:28:25.270 +07 [4139758] LOG:  incomplete startup packet
+2023-12-26 13:54:51.119 +07 [4139750] LOG:  received fast shutdown request
+2023-12-26 13:54:51.345 +07 [4139750] LOG:  aborting any active transactions
+2023-12-26 13:54:51.345 +07 [683448] FATAL:  terminating connection due to administrator command
+2023-12-26 13:54:51.345 +07 [683446] FATAL:  terminating connection due to administrator command
+2023-12-26 13:54:51.346 +07 [683447] FATAL:  terminating connection due to administrator command
+2023-12-26 13:54:51.349 +07 [4139750] LOG:  worker process: logical replication launcher (PID 4139757) exited with exit code 1
+2023-12-26 13:54:51.350 +07 [4139752] LOG:  shutting down
+2023-12-26 13:54:51.357 +07 [4139750] LOG:  database system is shut down
+2023-12-26 13:54:58.102 +07 [699016] LOG:  listening on IPv4 address "127.0.0.1", port 39153
+2023-12-26 13:54:58.102 +07 [699016] LOG:  listening on Unix socket "/tmp/.s.PGSQL.39153"
+2023-12-26 13:54:58.133 +07 [699020] LOG:  database system was shut down at 2023-12-26 13:54:51 +07
+2023-12-26 13:54:58.156 +07 [699016] LOG:  database system is ready to accept connections
+2023-12-26 13:54:58.159 +07 [699027] LOG:  incomplete startup packet
+2023-12-27 09:58:05.301 +07 [699016] LOG:  received fast shutdown request
+2023-12-27 09:58:05.301 +07 [699016] LOG:  aborting any active transactions
+2023-12-27 09:58:05.301 +07 [1425683] FATAL:  terminating connection due to administrator command
+2023-12-27 09:58:05.301 +07 [1425682] FATAL:  terminating connection due to administrator command
+2023-12-27 09:58:05.304 +07 [1425681] FATAL:  terminating connection due to administrator command
+2023-12-27 09:58:05.306 +07 [699016] LOG:  worker process: logical replication launcher (PID 699026) exited with exit code 1
+2023-12-27 09:58:05.308 +07 [699021] LOG:  shutting down
+waiting for server to shut down....2023-12-27 09:58:05.329 +07 [699016] LOG:  database system is shut down
+ done
+server stopped
+2023-12-27 09:58:10.950 +07 [1427942] LOG:  listening on IPv4 address "127.0.0.1", port 42779
+2023-12-27 09:58:10.950 +07 [1427942] LOG:  listening on Unix socket "/tmp/.s.PGSQL.42779"
+2023-12-27 09:58:10.962 +07 [1427944] LOG:  database system was shut down at 2023-12-27 09:58:05 +07
+2023-12-27 09:58:10.965 +07 [1427942] LOG:  database system is ready to accept connections
+2023-12-27 09:58:11.049 +07 [1427955] LOG:  incomplete startup packet
+2024-01-03 14:02:00.473 +07 [1427942] LOG:  received fast shutdown request
+2024-01-03 14:02:00.490 +07 [1427942] LOG:  aborting any active transactions
+waiting for server to shut down....2024-01-03 14:02:00.518 +07 [3980424] FATAL:  terminating connection due to administrator command
+2024-01-03 14:02:00.518 +07 [3980423] FATAL:  terminating connection due to administrator command
+2024-01-03 14:02:00.518 +07 [3980422] FATAL:  terminating connection due to administrator command
+2024-01-03 14:02:00.520 +07 [1427942] LOG:  worker process: logical replication launcher (PID 1427951) exited with exit code 1
+2024-01-03 14:02:00.520 +07 [1427945] LOG:  shutting down
+2024-01-03 14:02:00.525 +07 [1427942] LOG:  database system is shut down
+ done
+server stopped
+2024-01-03 14:02:11.257 +07 [3983189] LOG:  listening on IPv4 address "127.0.0.1", port 33681
+2024-01-03 14:02:11.257 +07 [3983189] LOG:  listening on Unix socket "/tmp/.s.PGSQL.33681"
+2024-01-03 14:02:11.271 +07 [3983191] LOG:  database system was shut down at 2024-01-03 14:02:00 +07
+2024-01-03 14:02:11.284 +07 [3983189] LOG:  database system is ready to accept connections
+2024-01-03 14:02:11.319 +07 [3983200] LOG:  incomplete startup packet
+2024-01-03 16:05:39.468 +07 [3983189] LOG:  received fast shutdown request
+2024-01-03 16:05:39.468 +07 [3983189] LOG:  aborting any active transactions
+2024-01-03 16:05:39.469 +07 [4055293] FATAL:  terminating connection due to administrator command
+2024-01-03 16:05:39.469 +07 [4055292] FATAL:  terminating connection due to administrator command
+2024-01-03 16:05:39.469 +07 [4055291] FATAL:  terminating connection due to administrator command
+2024-01-03 16:05:39.473 +07 [3983189] LOG:  worker process: logical replication launcher (PID 3983199) exited with exit code 1
+2024-01-03 16:05:39.475 +07 [3983194] LOG:  shutting down
+waiting for server to shut down....2024-01-03 16:05:39.496 +07 [3983189] LOG:  database system is shut down
+ done
+server stopped
+2024-01-03 16:05:49.883 +07 [4057403] LOG:  listening on IPv4 address "127.0.0.1", port 46573
+2024-01-03 16:05:49.884 +07 [4057403] LOG:  listening on Unix socket "/tmp/.s.PGSQL.46573"
+2024-01-03 16:05:49.895 +07 [4057404] LOG:  database system was shut down at 2024-01-03 16:05:39 +07
+2024-01-03 16:05:49.896 +07 [4057403] LOG:  database system is ready to accept connections
+2024-01-03 16:05:49.984 +07 [4057411] LOG:  incomplete startup packet
+2024-01-04 12:42:22.626 +07 [4057403] LOG:  received fast shutdown request
+waiting for server to shut down...2024-01-04 12:42:22.651 +07 [4057403] LOG:  aborting any active transactions
+.2024-01-04 12:42:22.651 +07 [536462] FATAL:  terminating connection due to administrator command
+2024-01-04 12:42:22.651 +07 [536464] FATAL:  terminating connection due to administrator command
+2024-01-04 12:42:22.651 +07 [536463] FATAL:  terminating connection due to administrator command
+2024-01-04 12:42:22.652 +07 [4057403] LOG:  worker process: logical replication launcher (PID 4057410) exited with exit code 1
+2024-01-04 12:42:22.654 +07 [4057405] LOG:  shutting down
+2024-01-04 12:42:22.662 +07 [4057403] LOG:  database system is shut down
+ done
+server stopped

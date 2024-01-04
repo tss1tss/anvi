@@ -1,0 +1,42 @@
+[INFO  io.zonky.test.db.postgres.embedded.EmbeddedPostgres] Detected a Linux x86_64 system
+[INFO  io.zonky.test.db.postgres.embedded.DefaultPostgresBinaryResolver] Detected distribution: 'Ubuntu'
+[TRACE io.zonky.test.db.postgres.embedded.DefaultPostgresBinaryResolver] Searching for postgres binaries - location: 'postgres-linux-x86_64-ubuntu.txz'
+[DEBUG io.zonky.test.db.postgres.embedded.DefaultPostgresBinaryResolver] Distribution specific postgres binaries not found
+[TRACE io.zonky.test.db.postgres.embedded.DefaultPostgresBinaryResolver] Searching for postgres binaries - location: 'postgres-linux-x86_64.txz'
+[INFO  io.zonky.test.db.postgres.embedded.DefaultPostgresBinaryResolver] System specific postgres binaries found: 'postgres-linux-x86_64.txz'
+[INFO  io.zonky.test.db.postgres.embedded.EmbeddedPostgres] Postgres binaries at .anvil-data/db-bin/PG-f2e3e42c260d3a84f6730bd8bccfb393
+[TRACE io.zonky.test.db.postgres.embedded.EmbeddedPostgres] cc3f89c9-10de-4f5f-93be-33209570c0b9 postgres data directory is .anvil-data/db
+[INFO  io.zonky.test.db.postgres.embedded.EmbeddedPostgres] cc3f89c9-10de-4f5f-93be-33209570c0b9 postmaster started as Process[pid=4057403, exitValue="not exited"] on port 46573.  Waiting up to PT10S for server startup to finish.
+[TRACE io.zonky.test.db.postgres.embedded.EmbeddedPostgres] While waiting for server startup
+java.sql.SQLException: connect failed
+	at io.zonky.test.db.postgres.embedded.EmbeddedPostgres.verifyReady(EmbeddedPostgres.java:344)
+	at io.zonky.test.db.postgres.embedded.EmbeddedPostgres.waitForServerStartup(EmbeddedPostgres.java:319)
+	at io.zonky.test.db.postgres.embedded.EmbeddedPostgres.startPostmaster(EmbeddedPostgres.java:284)
+	at io.zonky.test.db.postgres.embedded.EmbeddedPostgres.<init>(EmbeddedPostgres.java:163)
+	at io.zonky.test.db.postgres.embedded.EmbeddedPostgres$Builder.start(EmbeddedPostgres.java:583)
+	at anvil.app_server.postgres$launch_bundled_db_BANG_.invokeStatic(postgres.clj:93)
+	at anvil.app_server.postgres$launch_bundled_db_BANG_.invoke(postgres.clj:21)
+	at anvil.app_server.run$_main$fn__1769.invoke(run.clj:446)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:659)
+	at clojure.core$update_in$up__6562.invoke(core.clj:6105)
+	at clojure.core$update_in.invokeStatic(core.clj:6106)
+	at clojure.core$update_in.doInvoke(core.clj:6092)
+	at clojure.lang.RestFn.invoke(RestFn.java:445)
+	at anvil.app_server.run$_main.invokeStatic(run.clj:446)
+	at anvil.app_server.run$_main.doInvoke(run.clj:282)
+	at clojure.lang.RestFn.applyTo(RestFn.java:137)
+	at anvil.app_server.run.main(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at io.zonky.test.db.postgres.embedded.EmbeddedPostgres.verifyReady(EmbeddedPostgres.java:342)
+	... 18 more
+[INFO  io.zonky.test.db.postgres.embedded.EmbeddedPostgres] cc3f89c9-10de-4f5f-93be-33209570c0b9 postmaster startup finished in 00:00:00.204
+[INFO  io.zonky.test.db.postgres.embedded.EmbeddedPostgres] cc3f89c9-10de-4f5f-93be-33209570c0b9 shut down postmaster in 00:00:00.123
+[INFO  io.zonky.test.db.postgres.embedded.EmbeddedPostgres] Did not clean up directory /media/tss2tss/7e5347d8-06dd-4a18-b4c6-a7309160969b/ai/DML/anvil/dml2/dml/.anvil-data/db
